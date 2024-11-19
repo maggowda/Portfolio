@@ -2,10 +2,10 @@ import React from 'react'
 import mag from '../assets/images/mag.png';
 
 const classes = {
-    container: 'flex mt-[50px] mx-auto px-4 rounded-[30px] bg-white/1 backdrop-blur-sm h-[60px] w-[90%] justify-between items-center',
+    container: 'fixed flex mt-[20px] mx-auto px-4 rounded-[30px] bg-white/3 backdrop-blur-sm h-[60px] w-[90%] justify-between items-center',
     container1: 'flex justify-around items-center',
-    item: 'cursor-pointer text-white px-4',
-    img: 'h-[60px] w-[170px] cursor-pointer',
+    item: 'cursor-pointer text-white px-4 pb-[5px] pt-[3px] hover:bg-white/20 hover:backdrop-blur-sm hover:text-white rounded-[10px]',
+    img: 'h-[40px] w-[105px] cursor-pointer pt-[10px] mix-blend-multiply',
 }
 
 function Navbar() {
