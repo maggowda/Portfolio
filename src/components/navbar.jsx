@@ -1,11 +1,11 @@
 import React from 'react'
-import mag from '../assets/images/mag.png';
+import mag from '../assets/images/mag.svg';
 
 const classes = {
-    container: 'fixed flex mt-[20px] mx-auto px-4 rounded-[30px] bg-white/3 backdrop-blur-sm h-[60px] w-[90%] justify-between items-center',
+    container: 'font-mono fixed flex mt-[20px] mx-auto px-4 rounded-[30px] bg-white/3 backdrop-blur-sm h-[60px] w-[90%] justify-between items-center',
     container1: 'flex justify-around items-center',
-    item: 'cursor-pointer text-white px-4 pb-[5px] pt-[3px] hover:bg-white/20 hover:backdrop-blur-sm hover:text-white rounded-[10px]',
-    img: 'h-[40px] w-[105px] cursor-pointer pt-[10px] mix-blend-multiply',
+    item: 'cursor-pointer text-white px-4 pb-[4px] pt-[3px] hover:bg-white/20 hover:backdrop-blur-sm hover:text-white rounded-[10px]',
+    img: 'h-[60px] w-[150px] cursor-pointer mix-blend-multiply',
 }
 
 function Navbar() {
