@@ -1,10 +1,10 @@
 import React from 'react'
-import Navbar from './components/navbar'
+import Landing from './pages/landing'
 
 function App() {
   return (
-    <div><Navbar/></div>
+    <div><Landing/></div>
   )
 }
 
-export default App
+export default App;
