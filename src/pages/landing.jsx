@@ -2,10 +2,10 @@ import React from 'react'
 import arrow from '../assets/images/arrow-right.svg';
 
 const classes = {
-  container: 'flex flex-col h-screen items-center bg-black text-white width-[90%]',
+  container: 'flex flex-col items-center bg-black text-white width-[90%] mb-[50px]',
   h1: 'text-[50px] mt-[180px]',
   h2: 'text-[140px] font-semibold',
-  h3: 'text-[23px] mt-[20px] text-zinc-400',
+  h3: 'text-[23px] mt-[15px] text-zinc-400',
   button: 'text-[18px] text-semibold mt-[30px] bg-[#141414] border-solid border-[2px] border-zinc-700 hover:border-black px-[50px] py-[10px] rounded-[30px] hover:bg-[#006cff] cursor-pointer',
   img: 'w-[20px] h-[20px] ml-[10px] inline mb-[3px]'
 }
