@@ -16,8 +16,8 @@ const classes = {
     container1: 'flex flex-row',
     container2: 'flex flex-col mr-[60px]',
     container3: 'flex flex-col mr-[10px]',
-    anc: 'flex flex-row justify-between text-[15px] py-[18px] px-[15px]  ml-[10px] border-zinc-700 border-solid border-t-2 hover:bg-white/10 w-[250px] font-semibold h-[60px]',
-    anc2: 'flex flex-row justify-between text-[15px] py-[18px] px-[15px] ml-[10px] border-zinc-700 border-solid border-y-2 hover:bg-white/10 w-[250px] font-semibold h-[60px]',
+    anc: 'flex flex-row justify-between text-[15px] py-[18px] px-[15px]  ml-[10px] border-zinc-700 border-solid border-t-2 hover:bg-white/10 w-[250px] h-[60px]',
+    anc2: 'flex flex-row justify-between text-[15px] py-[18px] px-[15px] ml-[10px] border-zinc-700 border-solid border-y-2 hover:bg-white/10 w-[250px] h-[60px]',
     h1: 'text-lg p-[10px] font-bold text-zinc-400', 
     copy: 'text-sm'
 }

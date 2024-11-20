@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#root{
+    font-family: poppins;
+}
+
+@font-face {
+    font-family: 'edit';
+    src: url(../src/assets/fonts/PPEditorialNew-Italic.otf);
+}
+
+#font{
+    font-family: edit;
+    letter-spacing: 5px;
+}
