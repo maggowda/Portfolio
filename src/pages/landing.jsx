@@ -1,6 +1,7 @@
 import React from 'react'
 import arrow from '../assets/images/arrow-right.svg';
 import wallpaper from '../assets/images/wallpaper1.svg';
+import Carousel from '../components/carousel';
 
 const classes = {
   container: 'flex flex-col items-center bg-black text-white width-[90%]',
@@ -44,7 +45,7 @@ function Landing() {
         <div className={classes.button1}>Know More</div>
       </div>
       <div className={classes.h6}>Areas of expertise</div>
-      <div>auto carousel</div>
+      <Carousel/>
     </div>
   )
 }
