@@ -6,7 +6,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 import 'locomotive-scroll/src/locomotive-scroll.scss';
 
 const classes = {
-  container: 'flex flex-col justify-between items-center bg-black text-white',
+  container: 'flex flex-col justify-between items-center bg-black text-white w-full',
 };
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
     const scroll = new LocomotiveScroll({
       el: scrollRef.current,
       smooth: true,
+      multiplier: 0.8,
     });
 
     return () => {
