@@ -16,7 +16,7 @@ function Navbar() {
       </div>
       <div className={classes.container1}>
         <div className={classes.item}>About Me</div>
-        <div className={classes.item}>Blog</div>
+        <div className={classes.item}>Engineer</div>
         <div className={classes.item}>Projects</div>
         <div className={classes.item}>Contact</div>
       </div>
