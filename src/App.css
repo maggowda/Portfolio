@@ -16,6 +16,6 @@
     letter-spacing: 5px;
 }
 
-body::-webkit-scrollbar{
+::-webkit-scrollbar{
     display: none;
 }
