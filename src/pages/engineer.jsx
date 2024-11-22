@@ -107,7 +107,7 @@ const skill=[
 ]
 
 const classes={
-    container: 'flex flex-col items-center mt-[90px] w-full mb-[30px]',
+    container: 'flex flex-col items-center mt-[110px] w-full mb-[30px]',
     container0: 'flex flex-row',
     container1:'bg-[#141414] w-[760px] rounded-[30px] pb-[25px] my-[30px] mr-[60px]',
     container2:'bg-[#141414] w-[1120px] rounded-[30px] pb-[25px] my-[30px]',
