@@ -6,7 +6,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 import 'locomotive-scroll/src/locomotive-scroll.scss';
 
 const classes = {
-  container: 'flex flex-col justify-between items-center bg-black text-white w-full',
+  container: 'flex flex-col justify-between items-center bg-black text-white',
 };
 
 function App() {

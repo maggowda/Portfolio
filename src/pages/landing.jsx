@@ -4,8 +4,8 @@ import wallpaper from '../assets/images/wallpaper1.svg';
 import Carousel from '../components/carousel';
 
 const classes = {
-  container: 'flex flex-col items-center bg-black text-white width-[90%]',
-  container1: 'flex flex-row justify-around items-center w-full mt-[-80px]',
+  container: 'flex flex-col items-center bg-black text-white w-screen',
+  container1: 'flex flex-row justify-around items-center mt-[-80px] gap-12 mb-[15px]',
   container2: 'flex flex-col',
   container3: 'flex flex-col mt-[200px]',
   jap: 'text-[#006cff]',

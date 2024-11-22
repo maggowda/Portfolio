@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 const classes = {
     carousel: 'w-[1100px] mt-[40px] mb-[100px]',
-    skill: 'text-[18px] text-center text-semibold bg-[#141414] border-solid border-[2px] border-zinc-700 hover:text-[#006cff] px-[50px] py-[13px] rounded-[20px]',
+    skill: 'text-[18px] text-center text-semibold bg-[#141414] border-solid border-[2px] border-zinc-700 hover:text-[#006cff] px-[50px] py-[13px] rounded-full',
   };
 
 const skills=[
@@ -62,7 +62,7 @@ const Carousel = () => {
       dots: false,
       infinite: true,
       speed: 2500,
-      slidesToShow: 4,
+      slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
       autoplaySpeed: 500,
