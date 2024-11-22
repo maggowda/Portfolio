@@ -8,7 +8,7 @@ import mail from '../assets/images/mail.svg';
 import location from '../assets/images/gps.svg';
 
 const classes = {
-    container0: 'flex flex w-full justify-center items-center',
+    container0: 'flex flex w-full justify-center items-center m-auto h-full',
     container: 'flex flex-row justify-between bg-neutral-900 text-white px-[45px] pt-[30px] pb-[45px] mb-[50px] rounded-[20px]',
     img: 'w-[150px] h-[90px] ml-[-25px] mb-[-20px] mt-[-10px]',
     img2: 'w-[23px] h-[23px] inline',

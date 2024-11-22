@@ -1,7 +1,5 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import LocomotiveScroll from 'locomotive-scroll';
-import 'locomotive-scroll/src/locomotive-scroll.scss';
 import Landing from './pages/landing';
 import Engineer from './pages/engineer';
 import Projects from './pages/projects';
@@ -15,36 +13,20 @@ const classes = {
 };
 
 function App() {
-  const scrollRef = useRef(null);
-
-  useEffect(() => {
-    const scroll = new LocomotiveScroll({
-      el: scrollRef.current,
-      smooth: true,
-      multiplier: 0.8,
-    });
-
-    return () => {
-      scroll.destroy();
-    };
-  }, []);
-
   return (
-    <Router>
       <div className={classes.container}>
-        <Navbar />
-        <div data-scroll-container ref={scrollRef}>
-          <Routes>
-            <Route path="/" element={<Landing />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/engineer" element={<Engineer />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-          <Footer />
-        </div>
+        <Router>
+          <Navbar />
+            <Routes>
+              <Route path="/" element={<Landing />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/engineer" element={<Engineer />} />
+              <Route path="/projects" element={<Projects />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+            <Footer />
+        </Router>
       </div>
-    </Router>
   );
 }
 
