@@ -90,24 +90,38 @@ const lang=[
 const skill=[
   {
     name:'Programming Languages',
-    skills:'Javascript, C/C++, Python, HTML, CSS, SQL.',
+    skills:'Javascript, C/C++, Python, HTML, CSS, SQL',
   },
   {
     name:'Full-Stack Frameworks',
-    skills:'React.Js, Node.Js, Express.Js, Django, Next.Js, Tailwind.CSS.',
+    skills:'React.Js, Node.Js, Express.Js, Django, Next.Js, Tailwind.CSS',
   },
   {
     name:'Tools',
-    skills:'Git, GitHub, Figma, Canva, Excel, KiCAD, Arduino IDE, VS Code, ChatGPT, Design Spark.',
+    skills:'Git, GitHub, Figma, Canva, Excel, KiCAD, Arduino IDE, VS Code, ChatGPT, Design Spark',
   },
   {
     name:'Database',
-    skills:'MySQL, MongoDB.',
+    skills:'MySQL, MongoDB',
   }
 ]
 
 const classes={
-    container: 'flex flex-col items-center mt-[130px]',
+    container: 'flex flex-col items-center mt-[90px] w-full mb-[30px]',
+    container0: 'flex flex-row',
+    container1:'bg-[#141414] w-[760px] rounded-[30px] pb-[25px] my-[30px] mr-[60px]',
+    container2:'bg-[#141414] w-[1120px] rounded-[30px] pb-[25px] my-[30px]',
+    container3:'bg-[#141414] w-[300px] rounded-[30px] py-[28px] my-[30px]',
+    container4:'flex flex-col',
+    container5:'bg-[#141414] w-[300px] rounded-[30px] py-[40px] h-[199px] mt-[30px]',
+    head: 'font-serif font-semibold text-[60px] my-[25px] ml-[50px]',
+    head1: 'font-serif font-semibold text-[40px] text-center',
+    head2: 'font-serif font-semibold text-[22px] text-center mt-[10px] mx-auto',
+    para: 'text-[23px] mb-[15px] ml-[70px] text-zinc-400',
+    para1: 'text-[23px] mb-[15px] ml-[10px] text-zinc-400',
+    para2: 'text-[43px] font-semibold text-center text-[#006cff]',
+    para3: 'text-[22px] font-semibold text-center text-[#006cff] mt-[15px]',
+    pad: 'ml-[60px]'
 }
 
 const Engineer = () => {
@@ -122,40 +136,58 @@ const Engineer = () => {
           </div>
         ))}
       </div> */}
-      <div>
-        <h1>Skills</h1>
+      <div className={classes.container0}>
+        <div className={classes.container1}>
+          <h1 className={classes.head}>Education:</h1>
+          {edu.map((edu,index) => (
+            <div key={index} className={classes.para}>
+              <div>{edu.name}</div>
+              <div>{edu.institute} - ({edu.date})</div>
+            </div>
+          ))}
+        </div>
+        <div className={classes.container4}>
+          <div className={classes.container3}>
+            <h1 className={classes.head1}>Projects</h1>
+            <div className={classes.para2}>10+</div>
+          </div>
+          <div className={classes.container3}>
+            <h1 className={classes.head1}>CGPA</h1>
+            <div className={classes.para2}>8.62</div>
+          </div>
+        </div>
+      </div>
+      <div className={classes.container2}>
+        <h1 className={classes.head}>Skills:</h1>
         {skill.map((skill,index) => (
-          <div key={index}>
-            <div>{skill.name}</div>
+          <div key={index} className={classes.para}>
+            <div>{skill.name} :</div>
             <div>{skill.skills}</div>
           </div>
         ))}
       </div>
-      <div>
-        <h1>Certifications</h1>
+      <div className={classes.container2}>
+        <h1 className={classes.head}>Certifications:</h1>
         {certi.map((certif,index) => (
-          <div key={index}>
-            <div>{certif.name}</div>
-            <span>{certif.institute} - ({certif.date})</span>
+          <div key={index} className={classes.para}>
+            <div>{certif.name} : <span>{certif.institute} - ({certif.date})</span></div>
           </div>
         ))}
       </div>
-      <div>
-        <h1>Education</h1>
-        {edu.map((edu,index) => (
-          <div key={index}>
-            <div>{edu.name}</div>
-            <div>{edu.institute} - ({edu.date})</div>
+      <div className={classes.container0}>
+        <div className={classes.container1}>
+          <h1 className={classes.head}>Languages:</h1>
+          <div className={classes.pad}>
+            {lang.map((lang,index) => (
+              <span key={index} className={classes.para1}>
+                <span>{lang.name} </span>
+              </span>
+            ))}
           </div>
-        ))}
-      </div>
-      <div>
-        <h1>Languages</h1>
-        {lang.map((lang,index) => (
-          <span key={index}>
-            <span>{lang.name} </span>
-          </span>
-        ))}
+        </div>
+        <div className={classes.container5}>
+          <h1 className={classes.head2}>"The more you learn,<br /> the more you earn." <br/>- <span className={classes.para3}>Warren Buffett</span></h1>
+        </div>
       </div>
     </div>
   )
