@@ -4,6 +4,9 @@ import LocomotiveScroll from 'locomotive-scroll';
 import 'locomotive-scroll/src/locomotive-scroll.scss';
 import Landing from './pages/landing';
 import Engineer from './pages/engineer';
+import Projects from './pages/projects';
+import Contact from './components/contact';
+import About from './components/about';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 
@@ -33,9 +36,10 @@ function App() {
         <div data-scroll-container ref={scrollRef}>
           <Routes>
             <Route path="/" element={<Landing />} />
+            <Route path="/about" element={<About />} />
             <Route path="/engineer" element={<Engineer />} />
-            <Route path="/projects" element={<div>Projects Page</div>} />
-            <Route path="/contact" element={<div>Contact Page</div>} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
           <Footer />
         </div>

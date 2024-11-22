@@ -2,6 +2,7 @@ import React from 'react'
 import arrow from '../assets/images/arrow-right.svg';
 import wallpaper from '../assets/images/wallpaper1.svg';
 import Carousel from '../components/carousel';
+import { Link } from 'react-router-dom';
 
 const classes = {
   container: 'flex flex-col items-center bg-black text-white w-screen',
@@ -39,10 +40,10 @@ function Landing() {
           <div className={classes.div3}></div>
         </div>
       </div>
-      <div className={classes.button}>View all projects<img src={arrow} className={classes.img}/></div>
+      <Link to='/projects' className={classes.button}>View all projects<img src={arrow} className={classes.img}/></Link>
       <div className={classes.div0} style={{backgroundImage:`url(${wallpaper})`}}>
         <div className={classes.h5}>Engineering</div>
-        <div className={classes.button1}>Know More</div>
+        <Link to='/engineer' className={classes.button1}>Know More</Link>
       </div>
       <div className={classes.h6}>Areas of expertise</div>
       <Carousel/>
