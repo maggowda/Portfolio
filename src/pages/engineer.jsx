@@ -117,10 +117,12 @@ const classes={
     head: 'font-serif font-semibold text-[60px] my-[25px] ml-[50px]',
     head1: 'font-serif font-semibold text-[40px] text-center',
     head2: 'font-serif font-semibold text-[22px] text-center mt-[10px] mx-auto',
+    head3: 'font-serif font-semibold text-[35px] text-center mt-[10px] mx-auto',
     para: 'text-[23px] mb-[15px] ml-[70px] text-zinc-400',
     para1: 'text-[23px] mb-[15px] ml-[10px] text-zinc-400',
     para2: 'text-[43px] font-semibold text-center text-[#006cff]',
     para3: 'text-[22px] font-semibold text-center text-[#006cff] mt-[15px]',
+    para4: 'text-[35px] font-semibold text-center text-[#006cff] mt-[15px]',
     pad: 'ml-[60px]'
 }
 
@@ -152,8 +154,8 @@ const Engineer = () => {
             <div className={classes.para2}>10+</div>
           </div>
           <div className={classes.container3}>
-            <h1 className={classes.head1}>CGPA</h1>
-            <div className={classes.para2}>8.62</div>
+            <h1 className={classes.head3}>Full-Stack</h1>
+            <div className={classes.para4}>Developer</div>
           </div>
         </div>
       </div>
