@@ -2,6 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import arrow from '../assets/images/arrow-right.svg';
 
 const style = {
   position: 'absolute',
@@ -13,17 +14,18 @@ const style = {
   border: '2px solid #000',
   boxShadow: 24,
   p: 4,
-  item: 'cursor-pointer text-white px-4 pb-[6px] pt-[5px] hover:bg-white/20 hover:backdrop-blur-sm hover:text-white rounded-[10px]',
+  img: 'w-[20px] h-[20px] ml-[10px] inline mb-[3px]',
+  button: 'flex flex-row text-[18px] text-semibold bg-[#141414] border-solid inline border-[2px] border-zinc-700 hover:border-[#006cff] px-[50px] py-[13px] rounded-[30px] hover:bg-[#006cff] cursor-pointer',
 };
 
-const About = () => {
+const Start = () => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
   return (
     <div onClick={handleOpen}>
-      <div className={style.item}>About Me</div>
+      <span className={style.button}>Start a project<span><img src={arrow} className={style.img}/></span></span>
       <Modal
         open={open}
         onClose={handleClose}
@@ -43,4 +45,4 @@ const About = () => {
   );
 }
 
-export default About;
+export default Start;

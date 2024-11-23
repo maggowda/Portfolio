@@ -13,6 +13,7 @@ const style = {
   border: '2px solid #000',
   boxShadow: 24,
   p: 4,
+  item: 'cursor-pointer text-white px-4 pb-[6px] pt-[5px] hover:bg-white/20 hover:backdrop-blur-sm hover:text-white rounded-[10px]',
 };
 
 const Contact = () => {
@@ -21,8 +22,8 @@ const Contact = () => {
   const handleClose = () => setOpen(false);
 
   return (
-    <div>
-      <div onClick={handleOpen}>Contact</div>
+    <div onClick={handleOpen}>
+      <div className={style.item}>Contact</div>
       <Modal
         open={open}
         onClose={handleClose}

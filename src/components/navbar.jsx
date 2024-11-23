@@ -18,10 +18,10 @@ function Navbar() {
         <Link to="/"><img src={mag} className={classes.img} alt="Logo" /></Link>
       </div>
       <div className={classes.container1}>
-        <div className={classes.item}><About/></div>
+        <div><About/></div>
         <Link to="/engineer" className={classes.item}>Engineer</Link>
         <Link to="/projects" className={classes.item}>Projects</Link>
-        <div className={classes.item}><Contact/></div>
+        <div><Contact/></div>
       </div>
     </div>
   );
