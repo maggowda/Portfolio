@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import mag from '../assets/images/mag.svg';
+import About from './about';
+import Contact from './contact';
 
 const classes = {
   container: 'font-mono fixed top-0 left-0 right-0 flex mt-[20px] mx-auto px-4 rounded-[30px] bg-white/3 backdrop-blur-md h-[60px] w-[90%] justify-between items-center z-[1000]',
@@ -16,10 +18,10 @@ function Navbar() {
         <Link to="/"><img src={mag} className={classes.img} alt="Logo" /></Link>
       </div>
       <div className={classes.container1}>
-        <Link to="/about" className={classes.item}>About Me</Link>
+        <div className={classes.item}><About/></div>
         <Link to="/engineer" className={classes.item}>Engineer</Link>
         <Link to="/projects" className={classes.item}>Projects</Link>
-        <Link to="/contact" className={classes.item}>Contact</Link>
+        <div className={classes.item}><Contact/></div>
       </div>
     </div>
   );
