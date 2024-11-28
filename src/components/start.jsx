@@ -24,8 +24,8 @@ const Start = () => {
   const handleClose = () => setOpen(false);
 
   return (
-    <div onClick={handleOpen}>
-      <span className={style.button}>Start a project<span><img src={arrow} className={style.img}/></span></span>
+    <div>
+      <span onClick={handleOpen} className={style.button}>Start a project<span><img src={arrow} className={style.img}/></span></span>
       <Modal
         open={open}
         onClose={handleClose}

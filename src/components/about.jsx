@@ -22,8 +22,8 @@ const About = () => {
   const handleClose = () => setOpen(false);
 
   return (
-    <div onClick={handleOpen}>
-      <div className={style.item}>About Me</div>
+    <div>
+      <div onClick={handleOpen} className={style.item}>About Me</div>
       <Modal
         open={open}
         onClose={handleClose}

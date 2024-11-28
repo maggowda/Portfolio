@@ -22,8 +22,8 @@ const Contact = () => {
   const handleClose = () => setOpen(false);
 
   return (
-    <div onClick={handleOpen}>
-      <div className={style.item}>Contact</div>
+    <div>
+      <div onClick={handleOpen} className={style.item}>Contact</div>
       <Modal
         open={open}
         onClose={handleClose}
