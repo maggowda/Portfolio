@@ -13,7 +13,7 @@ const style = {
   button: 'bg-zinc-900 hover:bg-[#006cff] w-[50px] h-[50px] rounded-full mt-[10px] ml-[-90px] mr-[-25px] cursor-pointer',
   span: 'text-[#006cff] text-center mt-[30px] text-[23px] px-[20px]',
   img: 'w-[230px] h-[230px] rounded-[20px] mt-[10px] mx-[190px]',
-  img1: 'w-[25px] h-[25px] mt-[12.5px] ml-[12.5px]',
+  img1: 'w-[25px] h-[25px] mt-[13px] ml-[13px]',
   para: 'text-white text-left mt-[40px] px-[20px] text-[17px]',
   container1: 'flex flex-row justify-between w-[600px]',
   container: 'flex flex-col w-[730px] h-[590px] items-center bg-[#141414]/50 backdrop-blur-md rounded-[30px] border-solid border-[1px] border-zinc-800',
