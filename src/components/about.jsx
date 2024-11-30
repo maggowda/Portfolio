@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
+import profile from '../assets/images/profile.svg';
+import x from '../assets/images/x.svg';
 import Modal from '@mui/material/Modal';
 
 const style = {
@@ -8,11 +9,14 @@ const style = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
   p: 4,
+  button: 'bg-zinc-900 hover:bg-[#006cff] w-[50px] h-[50px] rounded-full mt-[10px] ml-[-90px] mr-[-25px] cursor-pointer',
+  span: 'text-[#006cff] text-center mt-[30px] text-[23px] px-[20px]',
+  img: 'w-[230px] h-[230px] rounded-[20px] mt-[10px] mx-[190px]',
+  img1: 'w-[25px] h-[25px] mt-[12.5px] ml-[12.5px]',
+  para: 'text-white text-left mt-[40px] px-[20px] text-[17px]',
+  container1: 'flex flex-row justify-between w-[600px]',
+  container: 'flex flex-col w-[730px] h-[590px] items-center bg-[#141414]/50 backdrop-blur-md rounded-[30px] border-solid border-[1px] border-zinc-800',
   item: 'cursor-pointer text-white px-4 pb-[6px] pt-[5px] hover:bg-white/20 hover:backdrop-blur-sm hover:text-white rounded-[10px]',
 };
 
@@ -24,19 +28,16 @@ const About = () => {
   return (
     <div>
       <div onClick={handleOpen} className={style.item}>About Me</div>
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
-          </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography>
+      <Modal open={open} onClose={handleClose} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
+        <Box sx={style}  className={style.container}> 
+            <div className={style.container1}>
+              <img src={profile} className={style.img}></img>
+              <div className={style.button} open={open} onClick={handleClose}>
+                <img src={x} className={style.img1}></img>
+              </div>
+            </div>
+            <p className={style.para} id='about'>I’m a passionate UI/UX designer and web developer with expertise in crafting visually compelling and user-friendly digital experiences. Proficient in the MERN stack, I excel at creating seamless interfaces and developing responsive web applications. My goal is to bridge the gap between aesthetics and functionality, ensuring every project leaves a lasting impression. Outside of work, I enjoy playing volleyball and cricket, immersing myself in gaming, and swimming to stay active.
+              <div className={style.span} id='about'> Let’s collaborate to bring innovative ideas to life!</div></p>
         </Box>
       </Modal>
     </div>

@@ -6,6 +6,10 @@
     font-family: poppins;
 }
 
+#about{
+    font-family: poppins;
+}
+
 @font-face {
     font-family: 'edit';
     src: url(../src/assets/fonts/PPEditorialNew-Italic.otf);
