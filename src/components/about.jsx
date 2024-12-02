@@ -16,7 +16,7 @@ const style = {
   img1: 'w-[25px] h-[25px]',
   para: 'text-white text-left mt-[40px] px-[20px] text-[17px]',
   container1: 'flex flex-row justify-between w-[600px]',
-  container: 'flex flex-col w-[730px] h-[590px] items-center bg-[#141414]/70 backdrop-blur-lg rounded-[30px] border-solid border-[1px] border-zinc-800',
+  container: 'flex flex-col w-[730px] h-[590px] items-center bg-black rounded-[30px] border-solid border-[1px] border-zinc-800',
   item: 'cursor-pointer text-white px-4 pb-[6px] pt-[5px] hover:bg-white/20 hover:backdrop-blur-sm hover:text-white rounded-[10px]',
 };
 

@@ -6,6 +6,11 @@
     font-family: poppins;
 }
 
+#input:focus{
+    outline: none;
+}
+
+
 #about{
     font-family: poppins;
 }
