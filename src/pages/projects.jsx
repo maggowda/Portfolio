@@ -2,7 +2,7 @@ import React from 'react'
 
 const classes = {
   container: 'flex flex-row justify-between w-screen mt-[170px] mb-[50px]',
-  container1: 'flex flex-col ml-[113px] bg-[#141414] h-[400px] w-[260px] mb-[30px] rounded-[30px] p-[30px] text-white sticky top-[100px]',
+  container1: 'flex flex-col ml-[113px] bg-[#141414] h-[490px] w-[260px] mb-[30px] rounded-[30px] p-[30px] text-white sticky top-[100px]',
   container2: 'flex flex-col mr-[113px]',
   container3: 'flex flex-row gap-8',
   card: 'w-[390px] h-[230px] rounded-[30px] bg-zinc-700 mb-[30px] flex justify-center items-center',
