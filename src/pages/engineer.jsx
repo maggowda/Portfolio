@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import arrow from '../assets/images/arrow-right.svg';
 
 const certi=[
   {
@@ -107,7 +108,6 @@ const skill=[
 ]
 
 const classes={
-    button: 'flex justify-center items-center w-[440px] h-[70px] rounded-[45px] bg-[#006cff] border-solid border-[1px] border-[#006cff] text-white text-[20px] px-[15px] my-[40px] hover:bg-[#141414] hover:border-[#006cff] cursor-pointer',
     container: 'flex flex-col items-center mt-[110px] w-full mb-[30px]',
     container0: 'flex flex-row',
     container1:'bg-[#141414] w-[760px] rounded-[30px] pb-[25px] my-[30px] mr-[60px]',
@@ -124,7 +124,9 @@ const classes={
     para2: 'text-[43px] font-semibold text-center text-[#006cff]',
     para3: 'text-[22px] font-semibold text-center text-[#006cff] mt-[15px]',
     para4: 'text-[35px] font-semibold text-center text-[#006cff] mt-[15px]',
-    pad: 'ml-[60px]'
+    pad: 'ml-[60px]',
+    button: 'flex flex-row justify-center items-center h-[70px] w-[350px] text-[20px] my-[50px] text-semibold bg-[#141414] border-solid inline border-[2px] border-zinc-700 hover:border-[#006cff] rounded-[45px] hover:bg-[#006cff] cursor-pointer',
+    img: 'w-[22px] h-[22px] ml-[15px] inline mb-[2px]',
 }
 
 const Engineer = () => {
@@ -192,7 +194,7 @@ const Engineer = () => {
           <h1 className={classes.head2}>"The more you learn,<br /> the more you earn." <br/>- <span className={classes.para3}>Warren Buffett</span></h1>
         </div>
       </div>
-      <a href='' className={classes.button}>Download Resume</a>
+      <a href='' className={classes.button}>Download Resume<span><img src={arrow} className={classes.img}/></span></a>
     </div>
   )
 }
