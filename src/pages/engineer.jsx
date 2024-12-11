@@ -107,6 +107,7 @@ const skill=[
 ]
 
 const classes={
+    button: 'flex justify-center items-center w-[440px] h-[70px] rounded-[45px] bg-[#006cff] border-solid border-[1px] border-[#006cff] text-white text-[20px] px-[15px] my-[40px] hover:bg-[#141414] hover:border-[#006cff] cursor-pointer',
     container: 'flex flex-col items-center mt-[110px] w-full mb-[30px]',
     container0: 'flex flex-row',
     container1:'bg-[#141414] w-[760px] rounded-[30px] pb-[25px] my-[30px] mr-[60px]',
@@ -191,6 +192,7 @@ const Engineer = () => {
           <h1 className={classes.head2}>"The more you learn,<br /> the more you earn." <br/>- <span className={classes.para3}>Warren Buffett</span></h1>
         </div>
       </div>
+      <a href='' className={classes.button}>Download Resume</a>
     </div>
   )
 }

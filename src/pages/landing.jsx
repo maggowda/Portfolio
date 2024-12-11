@@ -18,7 +18,8 @@ const classes = {
   h5: 'text-[90px] mt-[-30px] text-center',
   h6: 'text-[60px] mt-[30px] mb-[20px] text-center',
   button: 'flex flex-row text-[18px] text-semibold bg-[#141414] border-solid inline border-[2px] border-zinc-700 hover:border-[#006cff] px-[50px] py-[13px] rounded-[30px] hover:bg-[#006cff] cursor-pointer',
-  button1: 'text-[18px] text-semibold bg-white text-black mt-[15px] px-[50px] py-[15px] rounded-[30px] hover:bg-black hover:text-white cursor-pointer',
+  button1: 'flex justify-center items-center text-[18px] text-semibold bg-white w-[240px] h-[60px] text-black mt-[15px] rounded-[30px] hover:bg-black hover:text-white cursor-pointer',
+  button2: 'flex justify-center items-center w-[240px] text-semibold h-[60px] rounded-[30px] bg-white text-black text-[18px] px-[15px] my-[25px] hover:bg-black hover:text-white cursor-pointer',
   img: 'w-[20px] h-[20px] ml-[10px] inline mb-[3px]',
   div0: 'flex flex-col items-center justify-center w-[1120px] h-[630px] mt-[120px] mb-[50px] border-zinc-800 border-solid border-[2px] rounded-[50px] z-30',
   div3: 'w-[510px] h-[300px] rounded-[30px] bg-zinc-700 mb-[40px]' 
@@ -45,6 +46,7 @@ function Landing() {
       <div className={classes.div0} style={{backgroundImage:`url(${wallpaper})`}}>
         <div className={classes.h5}>Engineering</div>
         <Link to='/engineer' className={classes.button1}>Know More</Link>
+        <a href='' className={classes.button2}>Download CV</a>
       </div>
       <div className={classes.h6}>Areas of expertise</div>
       <Carousel/>
