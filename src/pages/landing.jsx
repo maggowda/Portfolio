@@ -7,7 +7,7 @@ import Start from '../components/start';
 
 const classes = {
   container: 'flex flex-col items-center bg-black text-white w-screen',
-  container1: 'flex flex-col justify-around items-center mt-[2vw] gap-10 mb-[15px]', 
+  container1: 'flex flex-col justify-around items-center mt-[2vw] gap-12 mb-[15px]', 
   container3: 'flex flex-col mt-[200px]',
   jap: 'text-[#006cff]',
   h1: 'text-[50px] mt-[195px] font-medium',
