@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import x from '../assets/images/x.svg';
 import Modal from '@mui/material/Modal';
 import arrow from '../assets/images/arrow-right.svg';
+import { PuffLoader } from 'react-spinners';
 
 const style = {
   position: 'absolute',
@@ -28,12 +29,14 @@ const style = {
   container3: 'flex w-[500px] mt-[40px] justify-center',
   container: 'flex flex-col w-[570px] h-[670px] items-center bg-black rounded-[30px] border-solid border-[1px] border-zinc-800',
   item: 'cursor-pointer text-white px-4 pb-[6px] pt-[5px] hover:bg-white/20 hover:backdrop-blur-sm hover:text-white rounded-[10px]',
+  spin: 'flex justify-center items-center w-[100%] h-[100%] bg-black bg-opacity-50 fixed top-0 left-0 z-[100]',
 };
 
 const Start = () => {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const [loading, setLoading] = useState(false);
 
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
@@ -44,6 +47,7 @@ const Start = () => {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true);
 
     const serviceId = 'service_l4dwx9c';
     const templateId = 'template_gb0ssw6';
@@ -63,6 +67,7 @@ const Start = () => {
     .then((response) => {
       console.log('SUCCESS!', response);
       alert('Your response has been submitted successfully');
+      setLoading(false);
       setName('');
       setEmail('');
       setDesignation('');
@@ -73,6 +78,7 @@ const Start = () => {
     .catch((error) => {
       console.log('FAILED...', error);
       alert('Your response has not been submitted');
+      setLoading(false);
     });
   };
 
@@ -137,6 +143,11 @@ const Start = () => {
                   <input type='submit' id='input' placeholder='Submit' className={style.button1} required/>
                 </div>
               </div>
+              {loading &&
+                <div className={style.spin}>
+                  <PuffLoader visible={true} size={70} color="white"/>
+                </div>
+              }
             </form>
         </Box>
       </Modal>
