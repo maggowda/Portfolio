@@ -5,12 +5,16 @@ import Engineer from './pages/engineer';
 import Projects from './pages/projects';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
+import LocomotiveScroll from 'locomotive-scroll';
 
 const classes = {
   container: 'flex flex-col justify-between items-center bg-black text-white',
 };
 
 function App() {
+
+  const locomotiveScroll = new LocomotiveScroll();
+
   return (
       <div className={classes.container}>
         <Router>
