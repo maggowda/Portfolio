@@ -33,3 +33,7 @@
 .slick-slide > div {
     margin: 0 20px;
 }
+
+.active{
+    background-color: #006cff;
+}
