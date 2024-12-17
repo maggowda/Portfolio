@@ -23,8 +23,8 @@ const classes = {
   img1: 'w-[22px] h-[22px] ml-[15px] inline mb-[2px]',
   div0: 'flex flex-col items-center justify-center w-[1120px] h-[630px] mt-[120px] mb-[50px] border-zinc-800 border-solid border-[2px] rounded-[50px] z-30',
   div3: 'w-[1120px] h-[630px] rounded-[50px] bg-zinc-700 sticky top-[110px] z-20 border-solid border-[2px] border-white',
-  div3_1: 'w-[1120px] h-[630px] rounded-[50px] bg-zinc-700 sticky top-[110px] z-30 border-solid border-[2px] border-white',
-  div3_2: 'w-[1120px] h-[630px] rounded-[50px] bg-zinc-700 sticky top-[110px] z-40 border-solid border-[2px] border-white',
+  div3_1: 'w-[1120px] h-[630px] rounded-[50px] bg-zinc-700 sticky top-[125px] z-30 border-solid border-[2px] border-white',
+  div3_2: 'w-[1120px] h-[630px] rounded-[50px] bg-zinc-700 sticky top-[140px] z-40 border-solid border-[2px] border-white',
   div3_3: 'w-[1120px] h-[630px] rounded-[50px] bg-zinc-700 sticky top-[110px] z-50 border-solid border-[2px] border-white',
   div4: 'flex flex-row gap-8 mt-[20px]', 
 }
