@@ -16,7 +16,7 @@ function App() {
   const locomotiveScroll = new LocomotiveScroll();
 
   return (
-      <div className={classes.container}>
+      <div data-scroll-speed="-1" className={classes.container}>
         <Router>
           <Navbar />
             <Routes>
