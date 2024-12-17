@@ -43,7 +43,6 @@ const Projects = () => {
 
   const handleResetButtonClick = () => {
     setSelectedFilters([]);
-    console.log("aythu");
   };
 
   useEffect(() => {
