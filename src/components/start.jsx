@@ -5,6 +5,7 @@ import x from '../assets/images/x.svg';
 import Modal from '@mui/material/Modal';
 import arrow from '../assets/images/arrow-right.svg';
 import { PuffLoader } from 'react-spinners';
+import toast, { Toaster } from 'react-hot-toast';
 
 const style = {
   position: 'absolute',
@@ -66,7 +67,15 @@ const Start = () => {
     emailjs.send(serviceId, templateId, templateParams, publicKey)
     .then((response) => {
       console.log('SUCCESS!', response);
-      alert('Your response has been submitted successfully');
+      toast.success('Response submitted successfully.', {
+        style: {
+          borderRadius: '10px',
+          padding: '10px',
+          color: '#ffffff',
+          background: '#141414',
+        },
+        duration: 2000,
+      });
       setLoading(false);
       setName('');
       setEmail('');
@@ -77,13 +86,22 @@ const Start = () => {
     })
     .catch((error) => {
       console.log('FAILED...', error);
-      alert('Your response has not been submitted');
+      toast.success('Failed to Submit the response.', {
+        style: {
+          borderRadius: '10px',
+          padding: '10px',
+          color: '#ffffff',
+          background: '#141414',
+        },
+        duration: 2000,
+      });
       setLoading(false);
     });
   };
 
   return (
     <div>
+      <Toaster position='top-center'/>
       <span onClick={handleOpen} className={style.button2}>Start a project<span><img src={arrow} className={style.img3}/></span></span>
       <Modal open={open} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
         <Box sx={style} id='about' className={style.container}> 

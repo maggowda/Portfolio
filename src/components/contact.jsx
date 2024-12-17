@@ -4,6 +4,7 @@ import Box from '@mui/material/Box';
 import x from '../assets/images/x.svg';
 import Modal from '@mui/material/Modal';
 import { PuffLoader } from 'react-spinners';
+import toast, { Toaster } from 'react-hot-toast';
 
 const style = {
   position: 'absolute',
@@ -63,7 +64,15 @@ const Contact = () => {
     emailjs.send(serviceId, templateId, templateParams, publicKey)
     .then((response) => {
       console.log('SUCCESS!', response);
-      alert('Your response has been submitted successfully');
+      toast.success('Response submitted successfully.', {
+        style: {
+          borderRadius: '10px',
+          padding: '10px',
+          color: '#ffffff',
+          background: '#141414',
+        },
+        duration: 2000,
+      });
       setLoading(false);
       setName('');
       setEmail('');
@@ -75,12 +84,21 @@ const Contact = () => {
     .catch((error) => {
       console.log('FAILED...', error);
       setLoading(false);
-      alert('Your response has not been submitted');
+      toast.success('Failed to Submit the response.', {
+        style: {
+          borderRadius: '10px',
+          padding: '10px',
+          color: '#ffffff',
+          background: '#141414',
+        },
+        duration: 2000,
+      });
     });
   };
 
   return (
     <div>
+      <Toaster position='top-center'/>
       <div onClick={handleOpen} className={style.item}>Contact</div>
       <Modal open={open} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
         <Box sx={style} id='about' className={style.container}> 
