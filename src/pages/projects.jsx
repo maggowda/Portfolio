@@ -41,6 +41,11 @@ const Projects = () => {
     );
   };
 
+  const handleResetButtonClick = () => {
+    setSelectedFilters([]);
+    console.log("aythu");
+  };
+
   useEffect(() => {
     if (selectedFilters.length === 0) {
       setFilteredItems(items);
@@ -63,7 +68,7 @@ const Projects = () => {
         ))}
       </div>
         <div className={classes.pro}>No. of projects - <span className={classes.span}>10</span></div>
-        <div className={classes.button}>Reset</div>
+        <div className={classes.button} onClick={handleResetButtonClick}>Reset</div>
       </div>
       <div className={classes.container2}>
         <div className={classes.container3}>
