@@ -194,7 +194,7 @@ const Engineer = () => {
           <h1 className={classes.head2}>"The more you learn,<br /> the more you earn." <br/>- <span className={classes.para3}>Warren Buffett</span></h1>
         </div>
       </div>
-      <a href='' className={classes.button}>Download Resume<span><img src={arrow} className={classes.img}/></span></a>
+      <a href='' target='_blank' className={classes.button}>Download Resume<span><img src={arrow} className={classes.img}/></span></a>
     </div>
   )
 }

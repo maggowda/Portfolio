@@ -58,7 +58,7 @@ function Landing() {
         <div className={classes.h5}>Engineering</div>
         <Link to='/engineer' className={classes.button1}>Know More</Link>
       </div>
-      <a href='' className={classes.button2}>Download Resume<span><img src={arrow} className={classes.img1}/></span></a>
+      <a href='' target='_blank' className={classes.button2}>Download Resume<span><img src={arrow} className={classes.img1}/></span></a>
       <div className={classes.h6}>Areas of expertise</div>
       <Carousel/>
     </div>
