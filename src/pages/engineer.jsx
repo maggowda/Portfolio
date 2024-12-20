@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect,useState} from 'react';
 import arrow from '../assets/images/arrow-right.svg';
 
 const certi=[
@@ -130,6 +130,24 @@ const classes={
 }
 
 const Engineer = () => {
+
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let start = 0;
+    const end = 10; 
+    if (start === end) return;
+
+    let totalDuration = 500; 
+    let incrementTime = (totalDuration / end) * 2; 
+
+    let timer = setInterval(() => {
+      start += 1;
+      setCount(start);
+      if (start === end) clearInterval(timer);
+    }, incrementTime);
+  }, []);
+
   return (
     <div className={classes.container}>
       {/* <div>
@@ -154,7 +172,7 @@ const Engineer = () => {
         <div className={classes.container4}>
           <div className={classes.container3}>
             <h1 className={classes.head1}>Projects</h1>
-            <div className={classes.para2}>10+</div>
+            <div className={classes.para2}>{count}+</div>
           </div>
           <div className={classes.container3}>
             <h1 className={classes.head3}>Full-Stack</h1>
