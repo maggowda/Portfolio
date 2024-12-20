@@ -34,15 +34,15 @@ function Footer() {
             <div className={classes.container1}>
                 <div className={classes.container2}>
                     <h1 className={classes.h1}>Social Networking</h1>
-                    <a href='' className={classes.anc}>Instagram<img src={instagram} className={classes.img2}/></a>
-                    <a href='' className={classes.anc}>Linkedin<img src={linkedin} className={classes.img2}/></a>
-                    <a href='' className={classes.anc2}>Github<img src={github} className={classes.img3}/></a>
+                    <a href='https://www.instagram.com/mag_gowda/' className={classes.anc}>Instagram<img src={instagram} className={classes.img2}/></a>
+                    <a href='https://www.linkedin.com/in/megharsha-a-gowda/' className={classes.anc}>Linkedin<img src={linkedin} className={classes.img2}/></a>
+                    <a href='https://github.com/maggowda' className={classes.anc2}>Github<img src={github} className={classes.img3}/></a>
                 </div>
                 <div className={classes.container3}>
                     <h1 className={classes.h1}>Contact Me</h1>
-                    <a href='' className={classes.anc}>Whatsapp<img src={whatsapp} className={classes.img3}/></a>
-                    <a href='' className={classes.anc}>Email<img src={mail} className={classes.img4}/></a>
-                    <a href='' className={classes.anc2}>Location<img src={location} className={classes.img4}/></a>
+                    <a href="https://wa.me/9591873115" className={classes.anc}>Whatsapp<img src={whatsapp} className={classes.img3}/></a>
+                    <a href='mailto:meghaharsha72@gmail.com' className={classes.anc}>Email<img src={mail} className={classes.img4}/></a>
+                    <a href='https://www.google.com/maps/place/185,+Kempegowda+Garden,+Abbigere,+Bengaluru,+Karnataka+560013/@13.0813792,77.5248099,21z/data=!4m6!3m5!1s0x3bae22e6618522a5:0x43c687ae737bb4f!8m2!3d13.0813964!4d77.5248363!16s%2Fg%2F11wb1lyst5?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D' className={classes.anc2}>Location<img src={location} className={classes.img4}/></a>
                 </div>
             </div>
         </div>
