@@ -42,7 +42,7 @@ function Landing() {
 
   return (
     <div className={classes.container}>
-      <div className={classes.h1}><span className={classes.jap}><Typical steps={[toggle ? 'こんにちは' : 'Hello', 9000]} loop={1} wrapper="span"/></span>, I'm</div>
+      <div className={classes.h1}><span className={classes.jap}><Typical steps={[toggle ? 'こんにちは' : 'Hello', 5000]} loop={1} wrapper="span"/></span>, I'm</div>
       <span className={classes.h2} id='font'>Megharsha</span>
       <div className={classes.h3}>Freelance UX UI Designer and Web Developer.<br/></div>
       <span><Start/></span>
