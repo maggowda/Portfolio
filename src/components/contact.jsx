@@ -47,7 +47,7 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    const serviceId = 'service_l4dwx9c';
+    const serviceId = 'service_9gkknm7';
     const templateId = 'template_gb0ssw6';
     const publicKey = 'pSroY9RBgJe1DON0w';
 

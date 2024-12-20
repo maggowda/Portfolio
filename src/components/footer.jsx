@@ -41,7 +41,7 @@ function Footer() {
                 <div className={classes.container3}>
                     <h1 className={classes.h1}>Contact Me</h1>
                     <a href="https://wa.me/9591873115" className={classes.anc}>Whatsapp<img src={whatsapp} className={classes.img3}/></a>
-                    <a href='mailto:meghaharsha72@gmail.com' className={classes.anc}>Email<img src={mail} className={classes.img4}/></a>
+                    <a href='mailto:megharsha.gowda.work@gmail.com' className={classes.anc}>Email<img src={mail} className={classes.img4}/></a>
                     <a href='https://www.google.com/maps/place/185,+Kempegowda+Garden,+Abbigere,+Bengaluru,+Karnataka+560013/@13.0813792,77.5248099,21z/data=!4m6!3m5!1s0x3bae22e6618522a5:0x43c687ae737bb4f!8m2!3d13.0813964!4d77.5248363!16s%2Fg%2F11wb1lyst5?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D' className={classes.anc2}>Location<img src={location} className={classes.img4}/></a>
                 </div>
             </div>
