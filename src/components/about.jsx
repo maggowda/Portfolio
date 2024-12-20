@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import profile from '../assets/images/profile.svg';
+import profile from '../assets/images/mag_profile.svg';
 import x from '../assets/images/x.svg';
 import Modal from '@mui/material/Modal';
 
@@ -12,11 +12,11 @@ const style = {
   p: 4,
   button: 'bg-zinc-800 hover:bg-[#006cff] w-[50px] h-[50px] rounded-full mt-[-12px] ml-[-40px] mr-[-45px] cursor-pointer flex justify-center items-center',
   span: 'text-[#006cff] mt-[30px] ml-[-22px] text-[20px] px-[20px]',
-  img: 'w-[230px] h-[230px] rounded-[30px] mt-[10px] mx-[190px]',
+  img: 'w-[280px] h-[280px] rounded-[30px] mt-[30px] mx-auto',
   img1: 'w-[25px] h-[25px]',
   para: 'text-white text-left mt-[40px] px-[20px] text-[17px]',
   container1: 'flex flex-row justify-between w-[600px]',
-  container: 'flex flex-col w-[730px] h-[590px] items-center bg-black rounded-[30px] border-solid border-[1px] border-zinc-800',
+  container: 'flex flex-col w-[730px] h-[660px] items-center bg-black rounded-[30px] border-solid border-[1px] border-zinc-800',
   item: 'cursor-pointer text-white px-4 pb-[6px] pt-[5px] hover:bg-white/20 hover:backdrop-blur-sm hover:text-white rounded-[10px]',
 };
 
