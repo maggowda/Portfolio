@@ -1,4 +1,5 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
+import Typical from 'react-typical';
 import arrow from '../assets/images/arrow-right.svg';
 import wallpaper from '../assets/images/wallpaper1.svg';
 import Carousel from '../components/carousel';
@@ -9,7 +10,7 @@ const classes = {
   container: 'flex flex-col items-center bg-black text-white w-screen',
   container1: 'flex flex-col justify-around items-center mt-[2vw] gap-12 mb-[15px]', 
   container3: 'flex flex-col mt-[200px]',
-  jap: 'text-[#006cff]',
+  jap: 'text-[#006cff] text-[8.5vh]',
   h1: 'text-[50px] mt-[195px] font-medium',
   h2: 'text-[140px] font-semibold',
   h3: 'text-[23px] mt-[5px] mb-[25px] text-zinc-400',
@@ -29,12 +30,22 @@ const classes = {
   div4: 'flex flex-row gap-8 mt-[20px]', 
 }
 function Landing() {
+
+  const [toggle, setToggle] = useState(true);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setToggle((prevToggle) => !prevToggle);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <div className={classes.container}>
-      <div className={classes.h1}><span className={classes.jap}>こんにちは</span>, I'm</div>{/*add changing hello*/}
+      <div className={classes.h1}><span className={classes.jap}><Typical steps={[toggle ? 'こんにちは' : 'Hello', 9000]} loop={1} wrapper="span"/></span>, I'm</div>
       <span className={classes.h2} id='font'>Megharsha</span>
       <div className={classes.h3}>Freelance UX UI Designer and Web Developer.<br/></div>
-      <span><Start/></span>{/*add smooth to button*/}
+      <span><Start/></span>
       <div className={classes.h4}>High quality web design <br/>and development</div>
       <div className={classes.container1}>
           <div className={classes.div3}></div>
