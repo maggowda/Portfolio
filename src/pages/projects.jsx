@@ -2,19 +2,17 @@ import React,{useState,useEffect} from 'react'
 
 const items = [
   { name: 'Project 1', category: 'Web' },
-  { name: 'Project 2', category: 'Web Design' },
-  { name: 'Project 3', category: 'Electronics' },
-  { name: 'Project 4', category: 'AI/ML' },
-  { name: 'Project 5', category: 'Web' },
-  { name: 'Project 6', category: 'Web Design' },
-  { name: 'Project 7', category: 'Electronics' },
+  { name: 'Project 2', category: 'Web' },
+  { name: 'Project 3', category: 'Web Design' },
+  { name: 'Project 4', category: 'Electronics' },
+  { name: 'Project 5', category: 'Electronics' },
+  { name: 'Project 6', category: 'Electronics' },
+  { name: 'Project 7', category: 'AI/ML' },
   { name: 'Project 8', category: 'AI/ML' },
-  { name: 'Project 9', category: 'Web' },
-  { name: 'Project 10', category: 'Web Design' },
 ];
 
 const classes = {
-  container: 'flex flex-row justify-between w-screen mt-[160px] mb-[50px] gap-10',
+  container: 'flex flex-row w-screen mt-[160px] mb-[50px] gap-10',
   container1: 'flex flex-col ml-[113px] bg-[#141414] h-[490px] w-[260px] mb-[28px] rounded-[30px] px-[40px] py-[30px] text-white sticky top-[100px]',
   container2: 'flex flex-row mr-[113px] mb-[30px]',
   container3: 'flex flex-row gap-8 flex-wrap',
@@ -66,7 +64,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-        <div className={classes.pro}>No. of projects - <span className={classes.span}>10</span></div>
+        <div className={classes.pro}>No. of projects - <span className={classes.span}>{items.length}</span></div>
         <div className={classes.button} onClick={handleResetButtonClick}>Reset</div>
       </div>
       <div className={classes.container2}>

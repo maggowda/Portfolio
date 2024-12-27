@@ -135,7 +135,7 @@ const Engineer = () => {
 
   useEffect(() => {
     let start = 0;
-    const end = 10; 
+    const end = 8; 
     if (start === end) return;
 
     let totalDuration = 500; 
@@ -172,7 +172,7 @@ const Engineer = () => {
         <div className={classes.container4}>
           <div className={classes.container3}>
             <h1 className={classes.head1}>Projects</h1>
-            <div className={classes.para2}>{count}+</div>
+            <div className={classes.para2}>{count}</div>
           </div>
           <div className={classes.container3}>
             <h1 className={classes.head3}>Full-Stack</h1>
