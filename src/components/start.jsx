@@ -14,7 +14,7 @@ const style = {
   transform: 'translate(-50%, -50%)',
   p: 4,
   img3: 'w-[20px] h-[20px] ml-[10px] inline mb-[3px]',
-  button2: 'flex flex-row text-[18px] text-semibold bg-[#141414] border-solid inline border-[2px] border-zinc-700 hover:border-[#006cff] px-[50px] py-[13px] rounded-[30px] hover:bg-[#006cff] cursor-pointer',
+  button2: 'flex flex-row lg:text-[18px] max-sm:text-[14px] text-semibold bg-[#141414] border-solid inline border-[2px] border-zinc-700 hover:border-[#006cff] max-sm:px-[40px] px-[50px] py-[13px] rounded-[30px] hover:bg-[#006cff] cursor-pointer',
   name:'text-white text-[18px] ml-[15px]',
   button1: 'w-[340px] h-[60px] rounded-[30px] bg-[#006cff] border-solid border-[1px] border-zinc-900 text-white text-[20px] px-[15px] mt-[10px] hover:bg-[#141414] hover:border-[#006cff] cursor-pointer',
   inside: 'w-[240px] h-[50px] rounded-[10px] bg-[#141414] border-solid border-[1px] border-zinc-800 text-white text-[16px] px-[15px] mt-[10px] hover:border-[#141414]',
