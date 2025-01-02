@@ -9,13 +9,13 @@ import location from '../assets/images/gps.svg';
 
 const classes = {
     container0: 'flex flex w-full justify-center items-center m-auto h-full',
-    container: 'flex flex-row justify-between bg-[#141414] text-white px-[45px] pt-[30px] pb-[45px] mb-[50px] rounded-[20px]',
+    container: 'flex flex-row lg:justify-between lg:w-[1100px] max-sm:w-[360px] max-sm:gap-8 max-sm:flex-wrap md:w-[680px] md:gap-10 md:flex-wrap bg-[#141414] text-white px-[45px] pt-[30px] pb-[45px] mb-[50px] rounded-[20px]',
     img: 'w-[150px] h-[90px] ml-[-25px] mb-[-20px] mt-[-10px]',
     img2: 'w-[23px] h-[23px] inline',
     img3: 'w-[22px] h-[21px] inline',
     img4: 'w-[28px] h-[28px] inline',
-    container4: 'mr-[279px]',
-    container1: 'flex flex-row',
+    container4: 'lg:mr-[100px] md:ml-[15px] max-sm:ml-[10px]',
+    container1: 'flex flex-row max-sm:flex-wrap max-sm:gap-8',
     container2: 'flex flex-col mr-[60px]',
     container3: 'flex flex-col mr-[10px]',
     anc: 'flex flex-row justify-between text-[15px] py-[18px] px-[15px]  ml-[10px] border-zinc-700 border-solid border-t-2 hover:bg-white/10 w-[250px] h-[60px]',
