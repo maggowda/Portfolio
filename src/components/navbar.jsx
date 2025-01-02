@@ -6,9 +6,9 @@ import Contact from './contact';
 
 const classes = {
   container: 'font-mono fixed top-0 left-0 right-0 flex mt-[20px] mx-auto px-4 rounded-[30px] bg-white/3 backdrop-blur-md h-[60px] w-[90%] justify-between items-center z-[1000]',
-  container1: 'flex justify-around items-center',
+  container1: 'flex justify-around items-center max-sm:text-[10px] lg:text-[16px]',
   item: 'cursor-pointer text-white px-4 pb-[6px] pt-[5px] hover:bg-white/20 hover:backdrop-blur-sm hover:text-white rounded-[10px]',
-  img: 'h-[60px] w-[150px] cursor-pointer mix-blend-multiply',
+  img: 'h-[60px] w-[150px] max-sm:h-[45px] max-sm:w-[65px] cursor-pointer mix-blend-multiply',
 };
 
 function Navbar() {
