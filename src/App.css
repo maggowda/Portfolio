@@ -34,6 +34,12 @@
     margin: 0 20px;
 }
 
+@media only screen and (max-width: 600px) {
+    .slick-slide > div {
+        margin: 0 10px;
+    }
+}
+
 .active{
     background-color: #006cff;
 }

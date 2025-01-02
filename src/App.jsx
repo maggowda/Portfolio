@@ -8,7 +8,7 @@ import Footer from './components/footer';
 import LocomotiveScroll from 'locomotive-scroll';
 
 const classes = {
-  container: 'flex flex-col justify-between items-center bg-black text-white',
+  container: 'flex flex-col w-screen justify-between items-center bg-black text-white',
 };
 
 function App() {

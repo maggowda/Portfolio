@@ -4,13 +4,13 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 const classes = {
-    carousel: 'w-[1100px] mt-[40px] mb-[100px]',
-    skill: 'text-[18px] text-center text-semibold bg-[#141414] border-solid border-[2px] border-zinc-700 px-[50px] py-[13px] rounded-full',
+    carousel: 'lg:w-[1100px] max-sm:w-[430px] md:w-[750px] mt-[40px] mb-[100px]',
+    skill: 'lg:text-[18px] max-sm:text-[12px] max-sm:px-[10px] md:text-[14px] text-center text-semibold bg-[#141414] border-solid border-[2px] border-zinc-700 px-[50px] py-[13px] rounded-full',
   };
 
 const skills=[
     {
-        name:'Web Development'
+        name:'Web Dev'
     },
     {
         name:'Web Design'
