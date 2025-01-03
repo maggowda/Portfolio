@@ -10,14 +10,14 @@ const style = {
   left: '50%',
   transform: 'translate(-50%, -50%)',
   p: 4,
-  button: 'bg-zinc-800 hover:bg-[#006cff] max-sm:mr-[20px] md:mr-[-30px] w-[50px] max-sm:mt-[-9px] h-[50px] rounded-full mt-[-12px] ml-[-40px] mr-[-45px] cursor-pointer flex justify-center items-center',
-  span: 'text-[#006cff] mt-[30px] max-sm:text-[16px] ml-[-22px] text-[20px] px-[20px]',
+  button: 'bg-zinc-800 hover:bg-[#006cff] max-sm:mr-[20px] md:mr-[-30px] max-sm:w-[40px] max-sm:h-[40px] w-[50px] max-sm:mt-[-9px] h-[50px] rounded-full mt-[-12px] ml-[-40px] mr-[-45px] cursor-pointer flex justify-center items-center',
+  span: 'text-[#006cff] mt-[30px] max-sm:text-[12px] ml-[-22px] text-[20px] px-[20px]',
   img: 'w-[280px] h-[280px] max-sm:w-[180px] max-sm:h-[180px] max-sm:ml-[120px] rounded-[30px] mt-[30px] mx-auto',
-  img1: 'w-[25px] h-[25px]',
-  para: 'text-white text-left mt-[40px] max-sm:text-[14px] px-[20px] text-[17px]',
-  container1: 'flex flex-row justify-between max-sm:w-[430px] w-[600px]',
-  container: 'flex flex-col w-[730px] max-sm:w-[430px] md:w-[700px] max-sm:h-[660px] md:h-[690px] h-[660px] items-center bg-black rounded-[30px] border-solid border-[1px] border-zinc-800',
-  item: 'cursor-pointer text-white px-4 pb-[6px] pt-[5px] hover:bg-white/20 hover:backdrop-blur-sm hover:text-white rounded-[10px]',
+  img1: 'w-[25px] max-sm:w-[20px] max-sm:h-[20px] h-[25px]',
+  para: 'text-white text-left mt-[40px] max-sm:text-[10px] px-[20px] text-[17px]',
+  container1: 'flex flex-row justify-between max-sm:w-[400px] w-[600px]',
+  container: 'flex flex-col w-[730px] max-sm:w-[400px] md:w-[700px] max-sm:h-[500px] md:h-[690px] h-[660px] items-center bg-black rounded-[30px] border-solid border-[1px] border-zinc-800',
+  item: 'cursor-pointer text-white px-4 max-sm:px-2 pb-[6px] pt-[5px] hover:bg-white/20 hover:backdrop-blur-sm hover:text-white rounded-[10px]',
 };
 
 const About = () => {
