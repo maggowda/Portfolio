@@ -9,15 +9,15 @@ import location from '../assets/images/gps.svg';
 
 const classes = {
     container0: 'flex flex w-full justify-center items-center m-auto h-full',
-    container: 'flex flex-row lg:justify-between lg:w-[1100px] max-sm:w-[360px] max-sm:gap-2 max-sm:flex-wrap md:w-[680px] md:gap-10 md:flex-wrap bg-[#141414] text-white px-[45px] pt-[30px] pb-[45px] mb-[50px] rounded-[20px]',
+    container: 'flex flex-row lg:justify-between lg:w-[1100px] flex-wrap w-[350px] sm:w-[360px] sm:gap-2 sm:flex-wrap md:w-[680px] md:gap-10 md:flex-wrap bg-[#141414] text-white px-[45px] pt-[30px] pb-[45px] mb-[50px] rounded-[20px]',
     img: 'w-[150px] h-[90px] max-sm:w-[90px] max-sm:h-[60px] max-sm:ml-[-15px] ml-[-25px] mb-[-20px] mt-[-10px]',
     img2: 'w-[23px] max-sm:h-[18px] max-sm:w-[18px] h-[23px] inline',
     img3: 'w-[22px] max-sm:h-[18px] max-sm:w-[18px] h-[21px] inline',
     img4: 'w-[28px] max-sm:h-[24px] max-sm:w-[24px] h-[28px] inline',
     container4: 'lg:mr-[100px] md:ml-[15px] max-sm:ml-[10px]',
     container1: 'flex flex-row max-sm:flex-wrap max-sm:gap-4',
-    container2: 'flex flex-col mr-[60px]',
-    container3: 'flex flex-col mr-[10px]',
+    container2: 'flex flex-col lg:mr-[60px] md:mr-[60px]',
+    container3: 'flex flex-col lg:mr-[10px] md:mr-[10px]',
     anc: 'flex flex-row justify-between text-[15px] max-sm:text-[12px] max-sm:py-[12px] py-[18px] px-[15px]  ml-[10px] border-zinc-700 border-solid border-t-2 hover:bg-white/10 w-[250px] h-[60px] max-sm:h-[45px]',
     anc2: 'flex flex-row justify-between text-[15px] py-[18px] max-sm:text-[12px] max-sm:py-[12px] px-[15px] ml-[10px] border-zinc-700 border-solid border-y-2 hover:bg-white/10 w-[250px] h-[60px] max-sm:h-[45px]',
     h1: 'text-lg p-[10px] font-bold text-zinc-400 max-sm:text-[14px]', 
