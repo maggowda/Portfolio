@@ -26,7 +26,7 @@ const style = {
   container2: 'flex lg:w-[500px] md:w-[600px] max-sm:w-[410px] mt-[20px] lg:justify-between max-sm:justify-around md:justify-around',
   container3: 'flex lg:w-[500px] md:w-[600px] max-sm:w-[410px] mt-[40px] justify-center',
   container: 'flex flex-col max-sm:w-[410px] md:w-[670px] md:h-[660px] lg:w-[570px] lg:h-[670px] items-center bg-black rounded-[30px] border-solid border-[1px] border-zinc-800',
-  item: 'cursor-pointer text-white px-4 max-sm:px-2 pb-[6px] pt-[5px] hover:bg-white/20 hover:backdrop-blur-sm hover:text-white rounded-[10px]',
+  item: 'cursor-pointer text-white lg:px-4 md:px-2 max-sm:px-2 pb-[6px] pt-[5px] hover:bg-white/20 hover:backdrop-blur-sm hover:text-white rounded-[10px]',
   spin: 'flex justify-center items-center w-[100%] h-[100%] bg-black bg-opacity-50 fixed top-0 left-0 z-[100]',
 };
 

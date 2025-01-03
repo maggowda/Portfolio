@@ -5,9 +5,9 @@ import About from './about';
 import Contact from './contact';
 
 const classes = {
-  container: 'font-mono fixed top-0 max-sm:h-[40px] md:h-[60px] left-0 right-0 flex mt-[20px] mx-auto max-sm:px-0 max-sm:w-[95%] px-4 rounded-[30px] bg-white/3 backdrop-blur-md lg:h-[60px] w-[90%] justify-between items-center z-[1000]',
+  container: 'font-mono fixed top-0 max-sm:h-[40px] md:h-[60px] md:w-[95%] left-0 right-0 flex mt-[20px] mx-auto max-sm:px-0 max-sm:w-[95%] px-4 rounded-[30px] bg-white/3 backdrop-blur-md lg:h-[60px] w-[90%] justify-between items-center z-[1000]',
   container1: 'flex justify-around items-center max-sm:text-[9px] lg:text-[16px]',
-  item: 'cursor-pointer text-white px-4 max-sm:px-2 pb-[6px] pt-[5px] hover:bg-white/20 hover:backdrop-blur-sm hover:text-white rounded-[10px]',
+  item: 'cursor-pointer text-white lg:px-4 max-sm:px-2 md:px-2 pb-[6px] pt-[5px] hover:bg-white/20 hover:backdrop-blur-sm hover:text-white rounded-[10px]',
   img: 'h-[60px] w-[150px] max-sm:h-[70px] max-sm:w-[90px] cursor-pointer mix-blend-multiply',
 };
 
