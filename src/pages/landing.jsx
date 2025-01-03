@@ -11,7 +11,7 @@ const classes = {
   container1: 'flex flex-col justify-around items-center mt-[2vw] gap-12 mb-[15px]', 
   container3: 'flex flex-col mt-[200px]',
   jap: 'text-[#006cff] lg:text-[8.5vh] max-sm:text-[35px] md:text-[45px]',
-  h1: 'lg:text-[50px] mt-[195px] font-medium md:text-[45px] max-sm:text-[35px]',
+  h1: 'lg:text-[60px] mt-[195px] font-medium md:text-[45px] max-sm:text-[35px]',
   h2: 'lg:text-[140px] font-semibold max-sm:text-[70px] md:text-[120px]',
   h3: 'text-[23px] mt-[5px] mb-[25px] max-sm:text-[16px] text-zinc-400',
   h4: 'text-[55px] mt-[150px] mb-[50px] text-center max-sm:text-[33px]',
