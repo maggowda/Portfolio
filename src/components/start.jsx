@@ -16,7 +16,7 @@ const style = {
   img3: 'w-[20px] h-[20px] ml-[10px] inline mb-[3px]',
   button2: 'flex flex-row text-[18px] max-sm:text-[14px] text-semibold bg-[#141414] border-solid inline border-[2px] border-zinc-700 hover:border-[#006cff] max-sm:px-[40px] px-[50px] py-[13px] rounded-[30px] hover:bg-[#006cff] cursor-pointer',
   name:'text-white text-[18px] ml-[15px] max-sm:text-[14px]',
-  button1: 'lg:w-[340px] md: lg:h-[60px] md:h-[60px] md:w-[440px] md:text-[22px] max-sm:w-[300px] max-sm:h-[45px] max-sm:text-[16px] rounded-[30px] bg-[#006cff] border-solid border-[1px] border-zinc-900 text-white text-[20px] px-[15px] mt-[10px] hover:bg-[#141414] hover:border-[#006cff] cursor-pointer',
+  button1: 'lg:w-[340px] lg:h-[60px] md:h-[60px] md:w-[440px] md:text-[22px] max-sm:w-[300px] max-sm:h-[45px] max-sm:text-[16px] rounded-[30px] bg-[#006cff] border-solid border-[1px] border-zinc-900 text-white text-[20px] px-[15px] mt-[10px] hover:bg-[#141414] hover:border-[#006cff] cursor-pointer',
   inside: 'lg:w-[240px] lg:h-[50px] md:w-[280px] md:h-[50px] max-sm:w-[185px] md:text-[18px] max-sm:h-[35px] max-sm:text-[13px] rounded-[10px] bg-[#141414] border-solid border-[1px] border-zinc-800 text-white text-[16px] px-[15px] mt-[10px] hover:border-[#141414]',
   inside1: 'lg:w-[500px] lg:h-[50px] md:w-[575px] md:h-[50px] rounded-[10px] md:text-[18px] bg-[#141414] max-sm:w-[400px] max-sm:text-[13px] max-sm:h-[35px] border-solid border-[1px] border-zinc-800 text-white text-[16px] px-[15px] mt-[10px] hover:border-[#141414]',
   inside2: 'lg:w-[470px] lg:h-[50px] md:w-[550px] md:h-[50px] text-white md:text-[18px] lg:text-[16px] max-sm:text-[13px] max-sm:w-[375px] max-sm:h-[35px] bg-[#141414]',
