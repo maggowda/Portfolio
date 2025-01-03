@@ -36,8 +36,8 @@ const About = () => {
                 <img src={x} className={style.img1}></img>
               </div>
             </div>
-            <p className={style.para} id='about'>I’m a passionate UI/UX designer and web developer with expertise in crafting visually compelling and user-friendly digital experiences. Proficient in the MERN stack, I excel at creating seamless interfaces and developing responsive web applications. My goal is to bridge the gap between aesthetics and functionality, ensuring every project leaves a lasting impression. Outside of work, I enjoy playing volleyball and cricket, immersing myself in gaming, and swimming to stay active.
-              <div className={style.span} id='about'> Let’s collaborate to bring innovative ideas to life!</div></p>
+            <div className={style.para} id='about'>I’m a passionate UI/UX designer and web developer with expertise in crafting visually compelling and user-friendly digital experiences. Proficient in the MERN stack, I excel at creating seamless interfaces and developing responsive web applications. My goal is to bridge the gap between aesthetics and functionality, ensuring every project leaves a lasting impression. Outside of work, I enjoy playing volleyball and cricket, immersing myself in gaming, and swimming to stay active.
+              <div className={style.span} id='about'> Let’s collaborate to bring innovative ideas to life!</div></div>
         </Box>
       </Modal>
     </div>
