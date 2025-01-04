@@ -10,7 +10,7 @@ const classes = {
   container: 'flex flex-col items-center bg-black text-white w-screen',
   container1: 'flex flex-col justify-around items-center mt-[2vw] gap-12 mb-[15px]', 
   container3: 'flex flex-col mt-[200px]',
-  jap: 'text-[#006cff] text-[30px] lg:text-[8.5vh] sm:text-[35px] md:text-[45px]',
+  jap: 'text-[#006cff] text-[30px] lg:text-[70px] sm:text-[35px] md:text-[45px]',
   h1: 'lg:text-[60px] mt-[195px] text-[30px] font-medium md:text-[45px] sm:text-[35px]',
   h2: 'lg:text-[140px] text-[60px] font-semibold sm:text-[70px] md:text-[120px]',
   h3: 'lg:text-[23px] text-[14px] mt-[5px] mb-[25px] md:text-[23px] sm:text-[16px] text-zinc-400',
@@ -22,11 +22,11 @@ const classes = {
   button1: 'flex justify-center items-center text-[16px] h-[40px] w-[180px] sm:text-[16px] lg:text-[18px] md:text-[18px] md:h-[60px] md:w-[220px] mt-[15px] text-semibold bg-white lg:w-[240px] lg:h-[60px] sm:h-[40px] sm:w-[180px] text-black rounded-[30px] hover:bg-black hover:text-white cursor-pointer',
   img: 'w-[20px] h-[20px] ml-[10px] inline mb-[3px]',
   img1: 'w-[22px] h-[22px] ml-[15px] inline mb-[2px]',
-  div0: 'flex sm:w-[410px] w-[350px] sm:h-[580px] flex-col md:h-[760px] md:w-[700px] h-[580px] items-center justify-center lg:w-[1120px] lg:h-[630px] mt-[120px] mb-[50px] border-zinc-800 border-solid border-[2px] rounded-[50px] z-30',
-  div3: 'lg:w-[1120px] sm:w-[410px] md:w-[700px] max-sm:h-[580px] md:h-[760px] w-[350px] h-[580px] lg:h-[630px] rounded-[50px] bg-zinc-700 sticky lg:top-[110px] md:top-[85px] max-sm:top-[70px] z-20 border-solid border-[2px] border-white',
-  div3_1: 'lg:w-[1120px] sm:w-[410px] lg:h-[630px] md:w-[700px] md:h-[760px] w-[350px] h-[580px] sm:h-[580px] rounded-[50px] bg-zinc-700 sticky lg:top-[125px] md:top-[95px] max-sm:top-[80px] z-30 border-solid border-[2px] border-white',
-  div3_2: 'lg:w-[1120px] sm:w-[410px] lg:h-[630px] md:w-[700px] md:h-[760px] w-[350px] h-[580px] rounded-[50px] sm:h-[580px] bg-zinc-700 sticky lg:top-[140px] md:top-[105px] max-sm:top-[90px] z-40 border-solid border-[2px] border-white',
-  div3_3: 'lg:w-[1120px] sm:w-[410px] lg:h-[630px] md:w-[700px] md:h-[760px] w-[350px] h-[580px] rounded-[50px] sm:h-[580px] bg-zinc-700 sticky lg:top-[110px] md:top-[115px] max-sm:top-[100px] z-50 border-solid border-[2px] border-white', 
+  div0: 'flex sm:w-[410px] w-[350px] sm:h-[580px] flex-col md:h-[560px] md:w-[700px] h-[580px] items-center justify-center lg:w-[1120px] lg:h-[630px] mt-[120px] mb-[50px] border-zinc-800 border-solid border-[2px] rounded-[50px] z-30',
+  div3: 'lg:w-[1120px] sm:w-[410px] md:w-[700px] sm:h-[580px] md:h-[560px] w-[350px] h-[580px] lg:h-[630px] rounded-[50px] bg-zinc-700 sticky lg:top-[110px] md:top-[85px] max-sm:top-[70px] z-20 border-solid border-[2px] border-white',
+  div3_1: 'lg:w-[1120px] sm:w-[410px] lg:h-[630px] md:w-[700px] md:h-[560px] w-[350px] h-[580px] sm:h-[580px] rounded-[50px] bg-zinc-700 sticky lg:top-[125px] md:top-[95px] max-sm:top-[80px] z-30 border-solid border-[2px] border-white',
+  div3_2: 'lg:w-[1120px] sm:w-[410px] lg:h-[630px] md:w-[700px] md:h-[560px] w-[350px] h-[580px] rounded-[50px] sm:h-[580px] bg-zinc-700 sticky lg:top-[140px] md:top-[105px] max-sm:top-[90px] z-40 border-solid border-[2px] border-white',
+  div3_3: 'lg:w-[1120px] sm:w-[410px] lg:h-[630px] md:w-[700px] md:h-[560px] w-[350px] h-[580px] rounded-[50px] sm:h-[580px] bg-zinc-700 sticky lg:top-[110px] md:top-[115px] max-sm:top-[100px] z-50 border-solid border-[2px] border-white', 
 }
 function Landing() {
 
