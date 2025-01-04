@@ -110,23 +110,24 @@ const skill=[
 const classes={
     container: 'flex flex-col items-center mt-[110px] w-full mb-[30px]',
     container0: 'flex flex-row',
-    container1:'bg-[#141414] w-[760px] lg:w-[690px] md:w-[555px] rounded-[30px] pb-[25px] my-[30px] mr-[60px] lg:mr-[60px] md:mr-[20px]',
-    container1_1:'bg-[#141414] w-[760px] lg:w-[655px] md:w-[460px] rounded-[30px] pb-[25px] my-[30px] mr-[60px] lg:mr-[60px] md:mr-[20px]',
-    container2:'bg-[#141414] w-[1120px] lg:w-[1010px] md:w-[730px] rounded-[30px] pb-[25px] my-[30px]',
-    container3:'bg-[#141414] w-[300px] lg:w-[260px] md:w-[150px] rounded-[30px] py-[28px] lg:py-[28px] md:h-[130px] lg:h-[176px] my-[30px] lg:my-[30px] md:my-[30px]',
+    container1:'bg-[#141414] w-[250px] sm:w-[250px] lg:w-[690px] md:w-[555px] rounded-[30px] pb-[15px] sm:pb-[15px] md:pb-[25px] lg:pb-[25px] lg:my-[30px] md:my-[30px] mt-[10px] mb-[30px] sm:mt-[10px] sm:mb-[30px] mr-[10px] sm:mr-[10px] lg:mr-[60px] md:mr-[20px]',
+    container1_1:'bg-[#141414] w-[230px] sm:w-[230px] lg:w-[655px] md:w-[460px] rounded-[30px] pb-[15px] sm:pb-[15px] md:pb-[25px] lg:pb-[25px] my-[30px] mr-[10px] mr-[10px] lg:mr-[60px] md:mr-[20px] sm:h-[119px] h-[119px] md:h-[149px] lg:h-[199px]',
+    container2:'bg-[#141414] w-[350px] sm:w-[350px] lg:w-[1010px] md:w-[730px] rounded-[30px] pb-[25px] my-[30px]',
+    container3:'bg-[#141414] w-[90px] sm:w-[90px] lg:w-[260px] md:w-[150px] rounded-[30px] py-[28px] lg:py-[28px] md:h-[130px] lg:h-[176px] my-[10px] sm:my-[10px] lg:my-[30px] md:my-[30px]',
     container4:'flex flex-col',
-    container5:'bg-[#141414] w-[300px] lg:w-[300px] md:w-[245px] rounded-[30px] lg:py-[40px] md:py-[25px] py-[20px] lg:h-[199px] md:h-[149px] h-[199px] mt-[30px]',
-    head: 'font-serif font-semibold text-[60px] my-[25px] lg:text-[60px] lg:my-[25px] md:text-[45px] md:my-[15px] ml-[50px] lg:ml-[50px] md:ml-[30px]',
-    head1: 'font-serif font-semibold text-[40px] lg:text-[40px] md:text-[25px] text-center',
-    head2: 'font-serif font-semibold text-[22px] lg:text-[22px] md:text-[18px] text-center mt-[10px] mx-auto',
-    head3: 'font-serif font-semibold text-[35px] lg:text-[35px] md:text-[20px] text-center mt-[10px] lg:mt-[5px] md:mt-[0px] mx-auto',
-    para: 'text-[23px] mb-[15px] lg:text-[21px] lg:mb-[15px] md:text-[18px] md:mb-[10px] lg:ml-[70px] ml-[70px] md:ml-[45px] text-zinc-400',
-    para1: 'text-[23px] lg:text-[23px] lg:mb-[15px] md:text-[18px] md:mb-[10px] lg:ml-[5px] ml-[70px] md:ml-[3px] mb-[15px] ml-[10px] text-zinc-400',
-    para2: 'text-[43px] lg:text-[43px] md:text-[25px] font-semibold text-center text-[#006cff]',
-    para3: 'text-[22px] lg:text-[22px] md:text-[20px] font-semibold text-center text-[#006cff] mt-[15px]',
-    para4: 'text-[35px] lg:text-[35px] md:text-[20px] font-semibold text-center text-[#006cff] mt-[15px]',
-    pad: 'ml-[60px]',
-    button: 'flex flex-row justify-center items-center h-[70px] w-[350px] text-[20px] my-[50px] text-semibold bg-[#141414] border-solid inline border-[2px] border-zinc-700 hover:border-[#006cff] rounded-[45px] hover:bg-[#006cff] cursor-pointer',
+    container5:'bg-[#141414] w-[110px] sm:w-[110px] lg:w-[300px] md:w-[245px] rounded-[30px] lg:py-[40px] md:py-[25px] sm:py-[30px] py-[30px] lg:h-[199px] md:h-[149px] sm:h-[119px] h-[119px] mt-[30px]',
+    head: 'font-serif font-semibold text-[20px] sm:text-[20px] my-[25px] lg:text-[60px] lg:my-[25px] md:text-[45px] md:my-[15px] ml-[20px] sm:ml-[20px] lg:ml-[50px] md:ml-[30px]',
+    head_1: 'font-serif font-semibold text-[20px] sm:text-[20px] mt-[25px] mb-[10px] sm:mt-[25px] sm:mb-[10px] lg:text-[60px] lg:my-[25px] md:text-[45px] md:my-[15px] ml-[20px] sm:ml-[20px] lg:ml-[50px] md:ml-[30px]',
+    head1: 'font-serif font-semibold text-[15px] sm:text-[15px] lg:text-[40px] md:text-[25px] text-center',
+    head2: 'font-serif font-semibold text-[8px] sm:text-[8px] lg:text-[22px] md:text-[18px] text-center mt-[10px] mx-auto',
+    head3: 'font-serif font-semibold text-[13px] sm:text-[13px] lg:text-[35px] md:text-[20px] text-center mt-[10px] lg:mt-[5px] md:mt-[0px] mx-auto',
+    para: 'text-[10px] sm:text-[10px] mb-[15px] lg:text-[21px] lg:mb-[15px] md:text-[18px] md:mb-[10px] lg:ml-[70px] ml-[20px] sm:ml-[20px] md:ml-[45px] text-zinc-400',
+    para1: 'text-[10px] sm:text-[10px] lg:text-[23px] lg:mb-[15px] md:text-[18px] md:mb-[10px] lg:ml-[5px] sm:ml-[0px] ml-[0px] md:ml-[3px] mb-[15px] text-zinc-400',
+    para2: 'text-[14px] sm:text-[14px] sm:mt-[5px] mt-[5px] lg:mt-[0px] md:mt-[0px] lg:text-[43px] md:text-[25px] font-semibold text-center text-[#006cff]',
+    para3: 'text-[8px] sm:text-[8px] lg:text-[22px] md:text-[20px] font-semibold text-center text-[#006cff] mt-[15px]',
+    para4: 'text-[13px] sm:text-[13px] lg:text-[35px] md:text-[20px] font-semibold text-center text-[#006cff] mt-[15px]',
+    pad: 'ml-[20px] sm:ml-[20px] md:ml-[60px] lg:ml-[60px]',
+    button: 'flex flex-row sm:h-[50px] w-[280px] h-[50px] sm:w-[290px] justify-center sm:text-[16px] items-center md:h-[60px] md:w-[330px] md:text-[18px] lg:h-[70px] lg:w-[350px] lg:text-[20px] md:h-[60px] md:w-[300px] md:text-[16px] my-[50px] text-semibold bg-[#141414] border-solid inline border-[2px] border-zinc-700 hover:border-[#006cff] rounded-[45px] hover:bg-[#006cff] cursor-pointer',
     img: 'w-[22px] h-[22px] ml-[15px] inline mb-[2px]',
 }
 
@@ -200,7 +201,7 @@ const Engineer = () => {
       </div>
       <div className={classes.container0}>
         <div className={classes.container1_1}>
-          <h1 className={classes.head}>Languages:</h1>
+          <h1 className={classes.head_1}>Languages:</h1>
           <div className={classes.pad}>
             {lang.map((lang,index) => (
               <span key={index} className={classes.para1}>
