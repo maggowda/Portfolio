@@ -9,7 +9,7 @@ import location from '../assets/images/gps.svg';
 
 const classes = {
     container0: 'flex flex w-full justify-center items-center m-auto h-full',
-    container: 'flex flex-row lg:justify-between lg:w-[1100px] flex-wrap w-[350px] sm:w-[360px] sm:gap-2 sm:flex-wrap md:w-[680px] md:gap-10 md:flex-wrap bg-[#141414] text-white px-[45px] pt-[30px] pb-[45px] mb-[50px] rounded-[20px]',
+    container: 'flex flex-row lg:justify-between lg:w-[1010px] flex-wrap w-[350px] sm:w-[360px] sm:gap-2 sm:flex-wrap md:w-[680px] md:gap-10 md:flex-wrap bg-[#141414] text-white px-[45px] pt-[30px] pb-[45px] mb-[50px] rounded-[20px]',
     img: 'w-[150px] h-[90px] max-sm:w-[90px] max-sm:h-[60px] max-sm:ml-[-15px] ml-[-25px] mb-[-20px] mt-[-10px]',
     img2: 'w-[23px] max-sm:h-[18px] max-sm:w-[18px] h-[23px] inline',
     img3: 'w-[22px] max-sm:h-[18px] max-sm:w-[18px] h-[21px] inline',

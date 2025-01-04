@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 const classes = {
-    carousel: 'lg:w-[1100px] sm:w-[410px] w-[340px] md:w-[750px] mt-[40px] mb-[100px]',
+    carousel: 'lg:w-[1010px] sm:w-[410px] w-[340px] md:w-[750px] mt-[40px] mb-[100px]',
     skill: 'lg:text-[18px] sm:text-[12px] text-[8px] px-[5px] sm:px-[10px] md:text-[14px] text-center text-semibold bg-[#141414] border-solid border-[2px] border-zinc-700 px-[50px] py-[13px] rounded-full',
   };
 
