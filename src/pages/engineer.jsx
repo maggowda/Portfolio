@@ -110,20 +110,21 @@ const skill=[
 const classes={
     container: 'flex flex-col items-center mt-[110px] w-full mb-[30px]',
     container0: 'flex flex-row',
-    container1:'bg-[#141414] w-[760px] rounded-[30px] pb-[25px] my-[30px] mr-[60px]',
-    container2:'bg-[#141414] w-[1120px] rounded-[30px] pb-[25px] my-[30px]',
-    container3:'bg-[#141414] w-[300px] rounded-[30px] py-[28px] my-[30px]',
+    container1:'bg-[#141414] w-[760px] lg:w-[760px] md:w-[555px] rounded-[30px] pb-[25px] my-[30px] mr-[60px] lg:mr-[60px] md:mr-[20px]',
+    container1_1:'bg-[#141414] w-[760px] lg:w-[760px] md:w-[460px] rounded-[30px] pb-[25px] my-[30px] mr-[60px] lg:mr-[60px] md:mr-[20px]',
+    container2:'bg-[#141414] w-[1120px] lg:w-[1010px] md:w-[730px] rounded-[30px] pb-[25px] my-[30px]',
+    container3:'bg-[#141414] w-[300px] lg:w-[300px] md:w-[150px] rounded-[30px] py-[28px] lg:py-[28px] md:h-[130px] lg:h-[186px] my-[30px] lg:my-[30px] md:my-[30px]',
     container4:'flex flex-col',
-    container5:'bg-[#141414] w-[300px] rounded-[30px] py-[40px] h-[199px] mt-[30px]',
-    head: 'font-serif font-semibold text-[60px] my-[25px] ml-[50px]',
-    head1: 'font-serif font-semibold text-[40px] text-center',
-    head2: 'font-serif font-semibold text-[22px] text-center mt-[10px] mx-auto',
-    head3: 'font-serif font-semibold text-[35px] text-center mt-[10px] mx-auto',
-    para: 'text-[23px] mb-[15px] ml-[70px] text-zinc-400',
-    para1: 'text-[23px] mb-[15px] ml-[10px] text-zinc-400',
-    para2: 'text-[43px] font-semibold text-center text-[#006cff]',
-    para3: 'text-[22px] font-semibold text-center text-[#006cff] mt-[15px]',
-    para4: 'text-[35px] font-semibold text-center text-[#006cff] mt-[15px]',
+    container5:'bg-[#141414] w-[300px] lg:w-[300px] md:w-[245px] rounded-[30px] lg:py-[40px] md:py-[25px] py-[20px] lg:h-[199px] md:h-[149px] h-[199px] mt-[30px]',
+    head: 'font-serif font-semibold text-[60px] my-[25px] lg:text-[60px] lg:my-[25px] md:text-[45px] md:my-[15px] ml-[50px] lg:ml-[50px] md:ml-[30px]',
+    head1: 'font-serif font-semibold text-[40px] lg:text-[40px] md:text-[25px] text-center',
+    head2: 'font-serif font-semibold text-[22px] lg:text-[22px] md:text-[18px] text-center mt-[10px] mx-auto',
+    head3: 'font-serif font-semibold text-[35px] lg:text-[35px] md:text-[20px] text-center mt-[10px] lg:mt-[10px] md:mt-[0px] mx-auto',
+    para: 'text-[23px] mb-[15px] lg:text-[23px] lg:mb-[15px] md:text-[18px] md:mb-[10px] lg:ml-[70px] ml-[70px] md:ml-[45px] text-zinc-400',
+    para1: 'text-[23px] lg:text-[23px] lg:mb-[15px] md:text-[18px] md:mb-[10px] lg:ml-[70px] ml-[70px] md:ml-[3px] mb-[15px] ml-[10px] text-zinc-400',
+    para2: 'text-[43px] lg:text-[43px] md:text-[25px] font-semibold text-center text-[#006cff]',
+    para3: 'text-[22px] lg:text-[22px] md:text-[20px] font-semibold text-center text-[#006cff] mt-[15px]',
+    para4: 'text-[35px] lg:text-[35px] md:text-[20px] font-semibold text-center text-[#006cff] mt-[15px]',
     pad: 'ml-[60px]',
     button: 'flex flex-row justify-center items-center h-[70px] w-[350px] text-[20px] my-[50px] text-semibold bg-[#141414] border-solid inline border-[2px] border-zinc-700 hover:border-[#006cff] rounded-[45px] hover:bg-[#006cff] cursor-pointer',
     img: 'w-[22px] h-[22px] ml-[15px] inline mb-[2px]',
@@ -198,7 +199,7 @@ const Engineer = () => {
         ))}
       </div>
       <div className={classes.container0}>
-        <div className={classes.container1}>
+        <div className={classes.container1_1}>
           <h1 className={classes.head}>Languages:</h1>
           <div className={classes.pad}>
             {lang.map((lang,index) => (
