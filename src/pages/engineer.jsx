@@ -108,14 +108,14 @@ const skill=[
 ]
 
 const classes={
-    container: 'flex flex-col items-center mt-[110px] w-full mb-[30px]',
+    container: 'flex flex-col items-center mt-[80px] sm:mt-[80px] md:mt-[110px] lg:mt-[110px] w-full mb-[30px]',
     container0: 'flex flex-row',
-    container1:'bg-[#141414] w-[250px] sm:w-[250px] lg:w-[690px] md:w-[555px] rounded-[30px] pb-[15px] sm:pb-[15px] md:pb-[25px] lg:pb-[25px] lg:my-[30px] md:my-[30px] mt-[10px] mb-[30px] sm:mt-[10px] sm:mb-[30px] mr-[10px] sm:mr-[10px] lg:mr-[60px] md:mr-[20px]',
-    container1_1:'bg-[#141414] w-[230px] sm:w-[230px] lg:w-[655px] md:w-[460px] rounded-[30px] pb-[15px] sm:pb-[15px] md:pb-[25px] lg:pb-[25px] my-[30px] mr-[10px] mr-[10px] lg:mr-[60px] md:mr-[20px] sm:h-[119px] h-[119px] md:h-[149px] lg:h-[199px]',
-    container2:'bg-[#141414] w-[350px] sm:w-[350px] lg:w-[1010px] md:w-[730px] rounded-[30px] pb-[25px] my-[30px]',
-    container3:'bg-[#141414] w-[90px] sm:w-[90px] lg:w-[260px] md:w-[150px] rounded-[30px] py-[28px] lg:py-[28px] md:h-[130px] lg:h-[176px] my-[10px] sm:my-[10px] lg:my-[30px] md:my-[30px]',
+    container1:'bg-[#141414] w-[250px] sm:w-[250px] lg:w-[690px] md:w-[555px] rounded-[15px] sm:rounded-[15px] md:rounded-[30px] lg:rounded-[30px] pb-[15px] sm:pb-[15px] md:pb-[25px] lg:pb-[25px] my-[10px] sm:my-[10px] md:my-[30px] lg:my-[30px] mt-[10px] sm:mt-[10px] mr-[10px] sm:mr-[10px] lg:mr-[60px] md:mr-[20px]',
+    container1_1:'bg-[#141414] w-[230px] sm:w-[230px] lg:w-[655px] md:w-[460px] rounded-[15px] sm:rounded-[15px] md:rounded-[30px] lg:rounded-[30px] pb-[15px] sm:pb-[15px] md:pb-[25px] lg:pb-[25px] my-[10px] sm:my-[10px] md:my-[30px] lg:my-[30px] mr-[10px] mr-[10px] lg:mr-[60px] md:mr-[20px] sm:h-[119px] h-[119px] md:h-[149px] lg:h-[199px]',
+    container2:'bg-[#141414] w-[350px] sm:w-[350px] lg:w-[1010px] md:w-[730px] rounded-[15px] sm:rounded-[15px] md:rounded-[30px] lg:rounded-[30px] pb-[25px] my-[10px] sm:my-[10px] md:my-[30px] lg:my-[30px]',
+    container3:'bg-[#141414] w-[90px] sm:w-[90px] lg:w-[260px] md:w-[150px] rounded-[15px] sm:rounded-[15px] md:rounded-[30px] lg:rounded-[30px] py-[28px] lg:py-[28px] md:h-[130px] lg:h-[176px] my-[10px] sm:my-[10px] lg:my-[30px] md:my-[30px]',
     container4:'flex flex-col',
-    container5:'bg-[#141414] w-[110px] sm:w-[110px] lg:w-[300px] md:w-[245px] rounded-[30px] lg:py-[40px] md:py-[25px] sm:py-[30px] py-[30px] lg:h-[199px] md:h-[149px] sm:h-[119px] h-[119px] mt-[30px]',
+    container5:'bg-[#141414] w-[110px] sm:w-[110px] lg:w-[300px] md:w-[245px] rounded-[15px] sm:rounded-[15px] md:rounded-[30px] lg:rounded-[30px] lg:py-[40px] md:py-[25px] sm:py-[30px] py-[30px] lg:h-[199px] md:h-[149px] sm:h-[119px] h-[119px] my-[10px] sm:my-[10px] md:my-[30px] lg:my-[30px]',
     head: 'font-serif font-semibold text-[20px] sm:text-[20px] my-[25px] lg:text-[60px] lg:my-[25px] md:text-[45px] md:my-[15px] ml-[20px] sm:ml-[20px] lg:ml-[50px] md:ml-[30px]',
     head_1: 'font-serif font-semibold text-[20px] sm:text-[20px] mt-[25px] mb-[10px] sm:mt-[25px] sm:mb-[10px] lg:text-[60px] lg:my-[25px] md:text-[45px] md:my-[15px] ml-[20px] sm:ml-[20px] lg:ml-[50px] md:ml-[30px]',
     head1: 'font-serif font-semibold text-[15px] sm:text-[15px] lg:text-[40px] md:text-[25px] text-center',
