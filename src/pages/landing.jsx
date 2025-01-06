@@ -29,6 +29,51 @@ const classes = {
   div3_2: 'lg:w-[1010px] sm:w-[410px] lg:h-[630px] md:w-[700px] md:h-[560px] w-[350px] h-[580px] rounded-[50px] sm:h-[580px] bg-zinc-700 sticky lg:top-[140px] md:top-[105px] max-sm:top-[90px] z-40 border-solid border-[2px] border-white',
   div3_3: 'lg:w-[1010px] sm:w-[410px] lg:h-[630px] md:w-[700px] md:h-[560px] w-[350px] h-[580px] rounded-[50px] sm:h-[580px] bg-zinc-700 sticky lg:top-[110px] md:top-[115px] max-sm:top-[100px] z-50 border-solid border-[2px] border-white', 
 }
+
+const fromLeft = {
+  hidden: { x: -200, opacity: 0 },
+  show: { x: 0, opacity: 1 ,
+    transition: {
+      duration: 1,
+      delay: 0.2,
+      ease: 'easeInOut',
+    }
+  }
+}
+
+const fromRight = {
+  hidden: { x: 200, opacity: 0 },
+  show: { x: 0, opacity: 1 ,
+    transition: {
+      duration: 1,
+      delay: 0.2,
+      ease: 'easeInOut',
+    }
+  }
+}
+
+const fromTop = {
+    hidden: { y: -50, opacity: 0, scale: 0.7 },
+    show: { y: 0, opacity: 1 , scale:1,
+      transition: {
+        duration: 0.8,
+        delay: 0.2,
+        ease: 'easeInOut',
+      }
+    }
+  }
+
+  const fromBottom = {
+    hidden: { y: 50, opacity: 0, scale: 0.7 },
+    show: { y: 0, opacity: 1 , scale:1,
+      transition: {
+        duration: 0.8,
+        delay: 0.2,
+        ease: 'easeInOut',
+      }
+    }
+  }
+
 function Landing() {
 
   const [toggle, setToggle] = useState(true);
@@ -42,25 +87,29 @@ function Landing() {
 
   return (
     <div className={classes.container}>
-      <div className={classes.h1}><span className={classes.jap}><Typical steps={[toggle ? 'こんにちは' : 'Hello', 5000]} loop={1} wrapper="span"/></span>, I'm</div>
-      <span className={classes.h2} id='font'>Megharsha</span>
-      <div className={classes.h3}>Freelance UX UI Designer and Web Developer.<br/></div>
-      <span><Start/></span>
-      <div className={classes.h4}>High quality web design <br/>and development</div>
+      <motion.div
+        variants={fromTop}
+        initial='hidden'
+        animate='show'
+        className={classes.h1}><span className={classes.jap}><Typical steps={[toggle ? 'こんにちは' : 'Hello', 5000]} loop={1} wrapper="span"/></span>, I'm</motion.div>
+      <motion.span variants={fromTop} initial='hidden' animate='show' className={classes.h2} id='font'>Megharsha</motion.span>
+      <motion.div variants={fromBottom} initial='hidden' animate='show' className={classes.h3}>Freelance UX UI Designer and Web Developer.<br/></motion.div>
+      <motion.span variants={fromBottom} initial='hidden' animate='show'><Start/></motion.span>
+      <motion.div variants={fromBottom} initial='hidden' whileInView={'show'} className={classes.h4}>High quality web design <br/>and development</motion.div>
       <div className={classes.container1}>
           <div className={classes.div3}></div>
           <div className={classes.div3_1}></div>
           <div className={classes.div3_2}></div>
           <div className={classes.div3_3}></div>
       </div>
-      <motion.div whileTap={{scale : 0.9}} whileHover={{scale:1.05}}><Link to='/projects' className={classes.button}>View all projects<span><img src={arrow} className={classes.img}/></span></Link></motion.div>
-      <div className={classes.div0} style={{backgroundImage:`url(${wallpaper})`}}>
+      <motion.div variants={fromBottom} initial='hidden' whileInView={'show'} whileTap={{scale : 0.9}} whileHover={{scale:1.05}}><Link to='/projects' className={classes.button}>View all projects<span><img src={arrow} className={classes.img}/></span></Link></motion.div>
+      <motion.div variants={fromLeft} initial='hidden' whileInView={'show'} className={classes.div0} style={{backgroundImage:`url(${wallpaper})`}}>
         <div className={classes.h5}>Engineering</div>
         <motion.div whileTap={{scale : 0.9}} whileHover={{scale:1.05}}><Link to='/engineer' className={classes.button1}>Know More</Link></motion.div>
-      </div>
-      <motion.a whileTap={{scale : 0.9}} whileHover={{scale:1.05}} href='' target='_blank' className={classes.button2}>Download Resume<span><img src={arrow} className={classes.img1}/></span></motion.a>
-      <div className={classes.h6}>Areas of expertise</div>
-      <Carousel/>
+      </motion.div>
+      <motion.a variants={fromBottom} initial='hidden' whileInView={'show'} whileTap={{scale : 0.9}} whileHover={{scale:1.05}} href='' target='_blank' className={classes.button2}>Download Resume<span><img src={arrow} className={classes.img1}/></span></motion.a>
+      <motion.div variants={fromBottom} initial='hidden' whileInView={'show'} className={classes.h6}>Areas of expertise</motion.div>
+      <motion.div variants={fromBottom} initial='hidden' whileInView={'show'}><Carousel/></motion.div>
     </div>
   )
 }

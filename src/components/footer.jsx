@@ -24,9 +24,21 @@ const classes = {
     h1: 'text-lg p-[10px] font-bold text-zinc-400 max-sm:text-[14px]', 
     copy: 'text-sm max-sm:text-[12px]',
 }
+
+const fromBottom = {
+    hidden: { y: 50, opacity: 0, scale: 0.7 },
+    show: { y: 0, opacity: 1 , scale:1,
+      transition: {
+        duration: 0.6,
+        delay: 0.2,
+        ease: 'easeInOut',
+      }
+    }
+  }
+
 function Footer() {
   return (
-    <div className={classes.container0}>
+    <motion.div variants={fromBottom} initial='hidden' whileInView={'show'} className={classes.container0}>
         <div className={classes.container}>
             <div className={classes.container4}>
                 <img src={mag} className={classes.img}/>
@@ -47,7 +59,7 @@ function Footer() {
                 </div>
             </div>
         </div>
-    </div>
+    </motion.div>
   )
 }
 

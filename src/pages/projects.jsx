@@ -26,6 +26,17 @@ const classes = {
   span: 'bg-[#2e2e2e] px-[5px] rounded-[5px] border-[#1b1b1b] border-solid border-[1px]',
 }
 
+const fromBottom = {
+  hidden: { y: 50, opacity: 0, scale: 0.5 },
+  show: { y: 0, opacity: 1 , scale:1,
+    transition: {
+      duration: 0.8,
+      delay: 0.2,
+      ease: 'easeInOut',
+    }
+  }
+}
+
 const Projects = () => {
 
   const [selectedFilters, setSelectedFilters] = useState([]);
@@ -56,7 +67,7 @@ const Projects = () => {
 
   return (
     <div className={classes.container}>
-      <div className={classes.container1}>
+      <motion.div variants={fromBottom} initial='hidden' animate='show' className={classes.container1}>
         <div className={classes.h1}>Services</div>
         <div className={classes.container4}>
         {filters.map((category, idx) => (
@@ -67,14 +78,14 @@ const Projects = () => {
       </div>
         <div className={classes.pro}>No. of projects - <span className={classes.span}>{items.length}</span></div>
         <motion.div whileTap={{scale: 0.9}} whileHover={{scale:1.05}} className={classes.button} onClick={handleResetButtonClick}>Reset</motion.div>
-      </div>
+      </motion.div>
       <div className={classes.container2}>
         <div className={classes.container3}>
           {filteredItems.map((item, idx) => (
-            <div key={idx} className={classes.card}>
+            <motion.div variants={fromBottom} initial='hidden' animate='show' key={idx} className={classes.card}>
               <p>{item.name}</p>
               <p>{item.category}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

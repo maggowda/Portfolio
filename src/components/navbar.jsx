@@ -12,9 +12,20 @@ const classes = {
   img: 'lg:h-[60px] md:h-[60px] md:w-[150px] lg:w-[150px] h-[60px] w-[80px] sm:h-[70px] sm:w-[90px] cursor-pointer mix-blend-multiply',
 };
 
+const fromTop = {
+  hidden: { y: -30, opacity: 0, scale: 0.7 },
+  show: { y: 0, opacity: 1 , scale:1,
+    transition: {
+      duration: 0.8,
+      delay: 0.2,
+      ease: 'easeInOut',
+    }
+  }
+}
+
 function Navbar() {
   return (
-    <div className={classes.container}>
+    <motion.div variants={fromTop} initial='hidden' animate='show' className={classes.container}>
       <div className={classes.container1}>
         <motion.div whileTap={{scale: 0.9}} whileHover={{scale:1.1}}><Link to="/"><img src={mag} className={classes.img} alt="Logo" /></Link></motion.div>
       </div>
@@ -24,7 +35,7 @@ function Navbar() {
         <motion.div whileTap={{scale: 0.9}} whileHover={{scale:1.05}}><Link to="/projects" className={classes.item}>Projects</Link></motion.div>
         <motion.div whileTap={{scale: 0.9}} whileHover={{scale:1.05}}><Contact/></motion.div>
       </motion.div>
-    </div>
+    </motion.div>
   );
 }
 

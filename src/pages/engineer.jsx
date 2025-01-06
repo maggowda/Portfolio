@@ -109,7 +109,7 @@ const skill=[
 ]
 
 const classes={
-    container: 'flex flex-col items-center mt-[80px] sm:mt-[80px] md:mt-[110px] lg:mt-[110px] w-full mb-[30px]',
+    container: 'flex flex-col items-center mt-[80px] sm:mt-[80px] md:mt-[110px] lg:mt-[80px] w-full mb-[30px]',
     container0: 'flex flex-row',
     container1:'bg-[#141414] w-[250px] sm:w-[250px] lg:w-[690px] md:w-[555px] rounded-[15px] sm:rounded-[15px] md:rounded-[30px] lg:rounded-[30px] pb-[15px] sm:pb-[15px] md:pb-[25px] lg:pb-[25px] my-[10px] sm:my-[10px] md:my-[30px] lg:my-[30px] mt-[10px] sm:mt-[10px] mr-[10px] sm:mr-[10px] lg:mr-[60px] md:mr-[20px]',
     container1_1:'bg-[#141414] w-[230px] sm:w-[230px] lg:w-[655px] md:w-[460px] rounded-[15px] sm:rounded-[15px] md:rounded-[30px] lg:rounded-[30px] pb-[15px] sm:pb-[15px] md:pb-[25px] lg:pb-[25px] my-[10px] sm:my-[10px] md:my-[30px] lg:my-[30px] mr-[10px] mr-[10px] lg:mr-[60px] md:mr-[20px] sm:h-[119px] h-[119px] md:h-[149px] lg:h-[199px]',
@@ -130,6 +130,17 @@ const classes={
     pad: 'ml-[20px] sm:ml-[20px] md:ml-[60px] lg:ml-[60px]',
     button: 'flex flex-row sm:h-[50px] w-[280px] h-[50px] sm:w-[290px] justify-center sm:text-[16px] items-center md:h-[60px] md:w-[330px] md:text-[18px] lg:h-[70px] lg:w-[350px] lg:text-[20px] md:h-[60px] md:w-[300px] md:text-[16px] my-[50px] text-semibold bg-[#141414] border-solid inline border-[2px] border-zinc-700 hover:border-[#006cff] rounded-[45px] hover:bg-[#006cff] cursor-pointer',
     img: 'w-[22px] h-[22px] ml-[15px] inline mb-[2px]',
+}
+
+const fromBottom = {
+  hidden: { y: 50, opacity: 0, scale: 0.5 },
+  show: { y: 0, opacity: 1 , scale:1,
+    transition: {
+      duration: 0.8,
+      delay: 0.2,
+      ease: 'easeInOut',
+    }
+  }
 }
 
 const Engineer = () => {
@@ -163,7 +174,7 @@ const Engineer = () => {
         ))}
       </div> */}
       <div className={classes.container0}>
-        <div className={classes.container1}>
+        <motion.div variants={fromBottom} initial='hidden' whileInView={'show'} className={classes.container1}>
           <h1 className={classes.head}>Education:</h1>
           {edu.map((edu,index) => (
             <div key={index} className={classes.para}>
@@ -171,8 +182,8 @@ const Engineer = () => {
               <div>{edu.institute} - ({edu.date})</div>
             </div>
           ))}
-        </div>
-        <div className={classes.container4}>
+        </motion.div>
+        <motion.div variants={fromBottom} initial='hidden' whileInView={'show'} className={classes.container4}>
           <div className={classes.container3}>
             <h1 className={classes.head1}>Projects</h1>
             <div className={classes.para2}>{count}</div>
@@ -181,9 +192,9 @@ const Engineer = () => {
             <h1 className={classes.head3}>Full-Stack</h1>
             <div className={classes.para4}>Developer</div>
           </div>
-        </div>
+        </motion.div>
       </div>
-      <div className={classes.container2}>
+      <motion.div variants={fromBottom} initial='hidden' whileInView={'show'} className={classes.container2}>
         <h1 className={classes.head}>Skills:</h1>
         {skill.map((skill,index) => (
           <div key={index} className={classes.para}>
@@ -191,16 +202,16 @@ const Engineer = () => {
             <div>{skill.skills}</div>
           </div>
         ))}
-      </div>
-      <div className={classes.container2}>
+      </motion.div>
+      <motion.div variants={fromBottom} initial='hidden' whileInView={'show'} className={classes.container2}>
         <h1 className={classes.head}>Certifications:</h1>
         {certi.map((certif,index) => (
           <div key={index} className={classes.para}>
             <div>{certif.name} : <span>{certif.institute} - ({certif.date})</span></div>
           </div>
         ))}
-      </div>
-      <div className={classes.container0}>
+      </motion.div>
+      <motion.div variants={fromBottom} initial='hidden' whileInView={'show'} className={classes.container0}>
         <div className={classes.container1_1}>
           <h1 className={classes.head_1}>Languages:</h1>
           <div className={classes.pad}>
@@ -214,8 +225,8 @@ const Engineer = () => {
         <div className={classes.container5}>
           <h1 className={classes.head2}>"The more you learn,<br /> the more you earn." <br/>- <span className={classes.para3}>Warren Buffett</span></h1>
         </div>
-      </div>
-      <motion.a whileTap={{scale: 0.9}} whileHover={{scale:1.05}} href='' target='_blank' className={classes.button}>Download Resume<span><img src={arrow} className={classes.img}/></span></motion.a>
+      </motion.div>
+      <motion.a variants={fromBottom} initial='hidden' whileInView={'show'} whileTap={{scale: 0.9}} whileHover={{scale:1.05}} href='' target='_blank' className={classes.button}>Download Resume<span><img src={arrow} className={classes.img}/></span></motion.a>
     </div>
   )
 }
