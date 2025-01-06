@@ -1,5 +1,6 @@
 import React,{useEffect,useState} from 'react';
 import arrow from '../assets/images/arrow-right.svg';
+import { motion } from 'framer-motion';
 
 const certi=[
   {
@@ -214,7 +215,7 @@ const Engineer = () => {
           <h1 className={classes.head2}>"The more you learn,<br /> the more you earn." <br/>- <span className={classes.para3}>Warren Buffett</span></h1>
         </div>
       </div>
-      <a href='' target='_blank' className={classes.button}>Download Resume<span><img src={arrow} className={classes.img}/></span></a>
+      <motion.a whileTap={{scale: 0.9}} whileHover={{scale:1.05}} href='' target='_blank' className={classes.button}>Download Resume<span><img src={arrow} className={classes.img}/></span></motion.a>
     </div>
   )
 }

@@ -6,6 +6,7 @@ import Modal from '@mui/material/Modal';
 import arrow from '../assets/images/arrow-right.svg';
 import { PuffLoader } from 'react-spinners';
 import toast, { Toaster } from 'react-hot-toast';
+import { motion } from 'framer-motion';
 
 const style = {
   position: 'absolute',
@@ -102,13 +103,13 @@ const Start = () => {
   return (
     <div>
       <Toaster position='top-center'/>
-      <span onClick={handleOpen} className={style.button2}>Start a project<span><img src={arrow} className={style.img3}/></span></span>
+      <motion.span whileTap={{scale: 0.9}} whileHover={{scale:1.05}} onClick={handleOpen} className={style.button2}>Start a project<span><img src={arrow} className={style.img3}/></span></motion.span>
       <Modal open={open} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
         <Box sx={style} id='about' className={style.container}> 
             <div className={style.container1}>
-              <div className={style.button} open={open} onClick={handleClose}>
+              <motion.div whileTap={{scale: 0.9}} whileHover={{rotate:90}} className={style.button} open={open} onClick={handleClose}>
                 <img src={x} className={style.img1}></img>
-              </div>
+              </motion.div>
             </div>
             <form onSubmit={sendEmail}>
               <div className={style.container2}>
@@ -157,9 +158,9 @@ const Start = () => {
                 </div>
               </div>
               <div className={style.container3}>
-                <div>
+                <motion.div whileTap={{scale: 0.9}} whileHover={{scale:1.05}}>
                   <input type='submit' id='input' placeholder='Submit' className={style.button1} required/>
-                </div>
+                </motion.div>
               </div>
               {loading &&
                 <div className={style.spin}>

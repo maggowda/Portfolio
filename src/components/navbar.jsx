@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import mag from '../assets/images/mag.svg';
 import About from './about';
 import Contact from './contact';
+import { motion } from 'framer-motion';
 
 const classes = {
   container: 'font-mono fixed top-0 h-[40px]  sm:h-[40px] md:h-[60px] md:w-[95%] lg:w-[85%] left-0 right-0 flex mt-[20px] mx-auto sm:px-0 sm:w-[95%] px-4 rounded-[30px] bg-white/3 backdrop-blur-md lg:h-[60px] w-[97%] justify-between items-center z-[1000]',
@@ -15,14 +16,14 @@ function Navbar() {
   return (
     <div className={classes.container}>
       <div className={classes.container1}>
-        <Link to="/"><img src={mag} className={classes.img} alt="Logo" /></Link>
+        <motion.div whileTap={{scale: 0.9}} whileHover={{scale:1.1}}><Link to="/"><img src={mag} className={classes.img} alt="Logo" /></Link></motion.div>
       </div>
-      <div className={classes.container1}>
-        <div><About/></div>
-        <Link to="/engineer" className={classes.item}>Engineer</Link>
-        <Link to="/projects" className={classes.item}>Projects</Link>
-        <div><Contact/></div>
-      </div>
+      <motion.div className={classes.container1}>
+        <motion.div whileTap={{scale: 0.9}} whileHover={{scale:1.05}}><About/></motion.div>
+        <motion.div whileTap={{scale: 0.9}} whileHover={{scale:1.05}}><Link to="/engineer" className={classes.item}>Engineer</Link></motion.div>
+        <motion.div whileTap={{scale: 0.9}} whileHover={{scale:1.05}}><Link to="/projects" className={classes.item}>Projects</Link></motion.div>
+        <motion.div whileTap={{scale: 0.9}} whileHover={{scale:1.05}}><Contact/></motion.div>
+      </motion.div>
     </div>
   );
 }

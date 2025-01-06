@@ -5,6 +5,7 @@ import wallpaper from '../assets/images/wallpaper1.svg';
 import Carousel from '../components/carousel';
 import { Link } from 'react-router-dom';
 import Start from '../components/start';
+import { motion } from 'framer-motion';
 
 const classes = {
   container: 'flex flex-col items-center bg-black text-white w-screen',
@@ -52,12 +53,12 @@ function Landing() {
           <div className={classes.div3_2}></div>
           <div className={classes.div3_3}></div>
       </div>
-      <Link to='/projects' className={classes.button}>View all projects<span><img src={arrow} className={classes.img}/></span></Link>
+      <motion.div whileTap={{scale : 0.9}} whileHover={{scale:1.05}}><Link to='/projects' className={classes.button}>View all projects<span><img src={arrow} className={classes.img}/></span></Link></motion.div>
       <div className={classes.div0} style={{backgroundImage:`url(${wallpaper})`}}>
         <div className={classes.h5}>Engineering</div>
-        <Link to='/engineer' className={classes.button1}>Know More</Link>
+        <motion.div whileTap={{scale : 0.9}} whileHover={{scale:1.05}}><Link to='/engineer' className={classes.button1}>Know More</Link></motion.div>
       </div>
-      <a href='' target='_blank' className={classes.button2}>Download Resume<span><img src={arrow} className={classes.img1}/></span></a>
+      <motion.a whileTap={{scale : 0.9}} whileHover={{scale:1.05}} href='' target='_blank' className={classes.button2}>Download Resume<span><img src={arrow} className={classes.img1}/></span></motion.a>
       <div className={classes.h6}>Areas of expertise</div>
       <Carousel/>
     </div>

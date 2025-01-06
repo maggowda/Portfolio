@@ -1,4 +1,5 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect} from 'react';
+import { motion } from 'framer-motion';
 
 const items = [
   { name: 'Project 1', category: 'Web' },
@@ -59,13 +60,13 @@ const Projects = () => {
         <div className={classes.h1}>Services</div>
         <div className={classes.container4}>
         {filters.map((category, idx) => (
-          <div onClick={() => handleFilterButtonClick(category)} className={`${classes.option} ${selectedFilters?.includes(category) ? "active" : ""}`} key={idx}>
+          <motion.div whileTap={{scale: 0.9}} onClick={() => handleFilterButtonClick(category)} className={`${classes.option} ${selectedFilters?.includes(category) ? "active" : ""}`} key={idx}>
             {category}
-          </div>
+          </motion.div>
         ))}
       </div>
         <div className={classes.pro}>No. of projects - <span className={classes.span}>{items.length}</span></div>
-        <div className={classes.button} onClick={handleResetButtonClick}>Reset</div>
+        <motion.div whileTap={{scale: 0.9}} whileHover={{scale:1.05}} className={classes.button} onClick={handleResetButtonClick}>Reset</motion.div>
       </div>
       <div className={classes.container2}>
         <div className={classes.container3}>
