@@ -6,6 +6,7 @@ import Modal from '@mui/material/Modal';
 import { PuffLoader } from 'react-spinners';
 import toast, { Toaster } from 'react-hot-toast';
 import { motion } from 'framer-motion';
+import { ssrImportMetaKey } from 'vite/runtime';
 
 const style = {
   position: 'absolute',
@@ -48,9 +49,9 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
-    const serviceId = 'service_9gkknm7';
-    const templateId = 'template_gb0ssw6';
-    const publicKey = 'pSroY9RBgJe1DON0w';
+    const serviceId = import.meta.env.REACT_APP_SERVICE_ID;
+    const templateId = import.meta.env.REACT_APP_TEMPLATE_ID;
+    const publicKey = import.meta.env.REACT_APP_PUBLIC_KEY;
 
     const templateParams = {
       from_name: name,
@@ -85,7 +86,7 @@ const Contact = () => {
     .catch((error) => {
       console.log('FAILED...', error);
       setLoading(false);
-      toast.success('Failed to Submit the response.', {
+      toast.error('Failed to Submit the response.', {
         style: {
           borderRadius: '10px',
           padding: '10px',
