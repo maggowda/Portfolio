@@ -35,7 +35,7 @@ const fromLeft = {
   show: { x: 0, opacity: 1 ,
     transition: {
       duration: 1,
-      delay: 0.2,
+      delay: 0,
       ease: 'easeInOut',
     }
   }
@@ -46,7 +46,7 @@ const fromRight = {
   show: { x: 0, opacity: 1 ,
     transition: {
       duration: 1,
-      delay: 0.2,
+      delay: 0,
       ease: 'easeInOut',
     }
   }
@@ -57,7 +57,7 @@ const fromTop = {
     show: { y: 0, opacity: 1 , scale:1,
       transition: {
         duration: 0.8,
-        delay: 0.2,
+        delay: 0,
         ease: 'easeInOut',
       }
     }
@@ -68,7 +68,7 @@ const fromTop = {
     show: { y: 0, opacity: 1 , scale:1,
       transition: {
         duration: 0.8,
-        delay: 0.2,
+        delay: 0,
         ease: 'easeInOut',
       }
     }
