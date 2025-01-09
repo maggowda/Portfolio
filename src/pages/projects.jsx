@@ -8,8 +8,8 @@ const items = [
   { name: 'Black Friday Sales', category: 'AI/ML', link: 'https://github.com/maggowda/Black_Friday_Sales_Prediction' },
   { name: 'Vehicle Detection', category: 'AI/ML', link: 'https://github.com/maggowda/Vehicle_Detection' },
   { name: 'Digital Clock', category: 'Electronics', link: 'https://drive.google.com/file/d/1m4VkKJeG2Ae59N4l3m-Frfpz3VmpxkT2/view?usp=sharing' },
-  { name: 'FM Radio', category: 'Electronics', link: 'https://www.google.com' },
-  { name: 'Cellphone Detector', category: 'Electronics', link: 'https://www.google.com' },
+  { name: 'FM Radio', category: 'Electronics', link: 'https://drive.google.com/file/d/1piisVNy1xV4sq_V-FxFoct_Ftklpbva1/view?usp=sharing' },
+  { name: 'Cellphone Detector', category: 'Electronics', link: 'https://drive.google.com/file/d/1tulKTzmEerDvYwIJFApPFiF8KB7zPXf9/view?usp=sharing' },
 ];
 
 const classes = {
