@@ -7,9 +7,9 @@ const items = [
   { name: 'Techniqed', category: 'Web Design', link: 'https://www.figma.com/design/Fcoqj3zCyleyG2Mdgzccpi/Techniqed-UI%2FUX?node-id=0-1&p=f&t=jzFEsq5umB5XjcG2-0' },
   { name: 'Black Friday Sales', category: 'AI/ML', link: 'https://github.com/maggowda/Black_Friday_Sales_Prediction' },
   { name: 'Vehicle Detection', category: 'AI/ML', link: 'https://github.com/maggowda/Vehicle_Detection' },
-  { name: 'Project 4', category: 'Electronics', link: 'https://www.google.com' },
-  { name: 'Project 5', category: 'Electronics', link: 'https://www.google.com' },
-  { name: 'Project 6', category: 'Electronics', link: 'https://www.google.com' },
+  { name: 'Digital Clock', category: 'Electronics', link: 'https://drive.google.com/file/d/1m4VkKJeG2Ae59N4l3m-Frfpz3VmpxkT2/view?usp=sharing' },
+  { name: 'FM Radio', category: 'Electronics', link: 'https://www.google.com' },
+  { name: 'Cellphone Detector', category: 'Electronics', link: 'https://www.google.com' },
 ];
 
 const classes = {
