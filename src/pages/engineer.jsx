@@ -43,6 +43,11 @@ const certi=[
     institute:'Meta',
     date:'2024',
   },
+  {
+    name:'Hack Horizon Hackathon',
+    institute:'Reva University',
+    date:'2024',
+  },
 ]
 
 const edu=[
