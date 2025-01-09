@@ -2,14 +2,14 @@ import React,{useState,useEffect} from 'react';
 import { motion } from 'framer-motion';
 
 const items = [
-  { name: 'Project 1', category: 'Web' , link: 'https://www.google.com'},
-  { name: 'Project 2', category: 'Web' , link: 'https://www.google.com'},
+  { name: 'Exalyte', category: 'Web' , link: 'https://github.com/maggowda/HackHorizon-Exalyte'},
+  { name: 'IEEE-ICAECC', category: 'Web' , link: 'https://github.com/maggowda/ieee-icaecc-website'},
   { name: 'Techniqed', category: 'Web Design', link: 'https://www.figma.com/design/Fcoqj3zCyleyG2Mdgzccpi/Techniqed-UI%2FUX?node-id=0-1&p=f&t=jzFEsq5umB5XjcG2-0' },
+  { name: 'Black Friday Sales', category: 'AI/ML', link: 'https://github.com/maggowda/Black_Friday_Sales_Prediction' },
+  { name: 'Vehicle Detection', category: 'AI/ML', link: 'https://github.com/maggowda/Vehicle_Detection' },
   { name: 'Project 4', category: 'Electronics', link: 'https://www.google.com' },
   { name: 'Project 5', category: 'Electronics', link: 'https://www.google.com' },
   { name: 'Project 6', category: 'Electronics', link: 'https://www.google.com' },
-  { name: 'Black Friday Sales', category: 'AI/ML', link: 'https://github.com/maggowda/Black_Friday_Sales_Prediction' },
-  { name: 'Vehicle Detection', category: 'AI/ML', link: 'https://github.com/maggowda/Vehicle_Detection' },
 ];
 
 const classes = {
