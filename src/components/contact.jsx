@@ -6,7 +6,6 @@ import Modal from '@mui/material/Modal';
 import { PuffLoader } from 'react-spinners';
 import toast, { Toaster } from 'react-hot-toast';
 import { motion } from 'framer-motion';
-import { ssrImportMetaKey } from 'vite/runtime';
 
 const style = {
   position: 'absolute',
