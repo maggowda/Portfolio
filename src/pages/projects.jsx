@@ -2,14 +2,14 @@ import React,{useState,useEffect} from 'react';
 import { motion } from 'framer-motion';
 
 const items = [
-  { name: 'Project 1', category: 'Web' },
-  { name: 'Project 2', category: 'Web' },
-  { name: 'Project 3', category: 'Web Design' },
-  { name: 'Project 4', category: 'Electronics' },
-  { name: 'Project 5', category: 'Electronics' },
-  { name: 'Project 6', category: 'Electronics' },
-  { name: 'Project 7', category: 'AI/ML' },
-  { name: 'Project 8', category: 'AI/ML' },
+  { name: 'Project 1', category: 'Web' , link: 'https://www.google.com'},
+  { name: 'Project 2', category: 'Web' , link: 'https://www.google.com'},
+  { name: 'Techniqed', category: 'Web Design', link: 'https://www.figma.com/design/Fcoqj3zCyleyG2Mdgzccpi/Techniqed-UI%2FUX?node-id=0-1&p=f&t=jzFEsq5umB5XjcG2-0' },
+  { name: 'Project 4', category: 'Electronics', link: 'https://www.google.com' },
+  { name: 'Project 5', category: 'Electronics', link: 'https://www.google.com' },
+  { name: 'Project 6', category: 'Electronics', link: 'https://www.google.com' },
+  { name: 'Black Friday Sales', category: 'AI/ML', link: 'https://github.com/maggowda/Black_Friday_Sales_Prediction' },
+  { name: 'Vehicle Detection', category: 'AI/ML', link: 'https://github.com/maggowda/Vehicle_Detection' },
 ];
 
 const classes = {
@@ -24,6 +24,8 @@ const classes = {
   button: 'mt-[5px] sm:mt-[5px] md:mt-[20px] lg:mt-[20px] w-[80px] sm:w-[80px] md:w-[180px] lg:w-[180px] pl-[-3px] hover:bg-[#006cff] flex pt-[4px] pb-[5px] sm:pt-[4px] sm:pb-[5px] md:pt-[9px] md:pb-[10px] lg:pt-[9px] lg:pb-[10px] items-center justify-center text-[10px] sm:text-[10px] md:text-[16px] lg:text-[16px] text-semibold bg-[#1b1b1b] border-solid inline border-[1px] border-zinc-700 hover:border-[#006cff] rounded-[30px] cursor-pointer',
   pro: 'ml-[-5px] text-[8px] sm:text-[8px] md:text-[18px] lg:text-[18px] mb-[10px]  sm:mb-[10px] md:mb-[20px] lg:mb-[20px]',
   span: 'bg-[#2e2e2e] px-[5px] rounded-[5px] border-[#1b1b1b] border-solid border-[1px]',
+  header: 'w-[210px] h-[130px] sm:w-[210px] sm:h-[130px] md:w-[365px] md:h-[230px] lg:w-[340px] lg:h-[230px] rounded-[15px] sm:rounded-[15px] md:rounded-[30px] lg:rounded-[30px] flex-col flex justify-center items-center cursor-pointer opacity-0',
+  hidden: 'hidden',
 }
 
 const fromBottom = {
@@ -82,10 +84,10 @@ const Projects = () => {
       <div className={classes.container2}>
         <div className={classes.container3}>
           {filteredItems.map((item, idx) => (
-            <motion.div variants={fromBottom} initial='hidden' animate='show' key={idx} className={classes.card}>
-              <p>{item.name}</p>
-              <p>{item.category}</p>
-            </motion.div>
+            <motion.a href={item.link} target='_blank' variants={fromBottom} initial='hidden' animate='show' key={idx} className={classes.card}>
+              <motion.p className={classes.header} whileHover={{opacity:1}}>{item.name}</motion.p>
+              <p className={classes.hidden}>{item.category}</p>
+            </motion.a>
           ))}
         </div>
       </div>
