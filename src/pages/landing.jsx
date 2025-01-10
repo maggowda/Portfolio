@@ -107,7 +107,7 @@ function Landing() {
         <div className={classes.h5}>Engineering</div>
         <motion.div whileTap={{scale : 0.9}} whileHover={{scale:1.05}}><Link to='/engineer' className={classes.button1}>Know More</Link></motion.div>
       </motion.div>
-      <motion.a variants={fromBottom} initial='hidden' whileInView={'show'} whileTap={{scale : 0.9}} whileHover={{scale:1.05}} href='https://drive.google.com/file/d/1IKl-YnFSyTmFSAPHfRye77VxzHNSUwDJ/view?usp=sharing' target='_blank' className={classes.button2}>Download Resume<span><img src={arrow} className={classes.img1}/></span></motion.a>
+      <motion.a variants={fromBottom} initial='hidden' whileInView={'show'} whileTap={{scale : 0.9}} whileHover={{scale:1.05}} href='https://drive.google.com/file/d/1Uk_Y8aha1p1hzs2O3HvDf0RJrDUMa3mV/view?usp=sharing' target='_blank' className={classes.button2}>Download Resume<span><img src={arrow} className={classes.img1}/></span></motion.a>
       <motion.div variants={fromBottom} initial='hidden' whileInView={'show'} className={classes.h6}>Areas of expertise</motion.div>
       <motion.div variants={fromBottom} initial='hidden' whileInView={'show'}><Carousel/></motion.div>
     </div>
