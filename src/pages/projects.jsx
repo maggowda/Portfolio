@@ -1,14 +1,18 @@
 import React,{useState,useEffect} from 'react';
 import { motion } from 'framer-motion';
+import Electronic from '../assets/images/electronics.svg';
+import Web from '../assets/images/web.svg';
+import AI_ML from '../assets/images/ai_ml.svg';
+import Web_Design from '../assets/images/webd.svg';
 
 const items = [
-  { name: 'Exalyte', category: 'Web' , link: 'https://github.com/maggowda/HackHorizon-Exalyte'},
-  { name: 'Techniqed', category: 'Web Design', link: 'https://www.figma.com/design/Fcoqj3zCyleyG2Mdgzccpi/Techniqed-UI%2FUX?node-id=0-1&p=f&t=jzFEsq5umB5XjcG2-0' },
-  { name: 'Black Friday Sales', category: 'AI/ML', link: 'https://github.com/maggowda/Black_Friday_Sales_Prediction' },
-  { name: 'Vehicle Detection', category: 'AI/ML', link: 'https://github.com/maggowda/Vehicle_Detection' },
-  { name: 'Digital Clock', category: 'Electronics', link: 'https://drive.google.com/file/d/1m4VkKJeG2Ae59N4l3m-Frfpz3VmpxkT2/view?usp=sharing' },
-  { name: 'FM Radio', category: 'Electronics', link: 'https://drive.google.com/file/d/1piisVNy1xV4sq_V-FxFoct_Ftklpbva1/view?usp=sharing' },
-  { name: 'Cellphone Detector', category: 'Electronics', link: 'https://drive.google.com/file/d/1tulKTzmEerDvYwIJFApPFiF8KB7zPXf9/view?usp=sharing' },
+  { name: 'Exalyte', category: 'Web' , link: 'https://github.com/maggowda/HackHorizon-Exalyte', src: Web },
+  { name: 'Techniqed', category: 'Web Design', link: 'https://www.figma.com/design/Fcoqj3zCyleyG2Mdgzccpi/Techniqed-UI%2FUX?node-id=0-1&p=f&t=jzFEsq5umB5XjcG2-0', src: Web_Design },
+  { name: 'Black Friday Sales', category: 'AI/ML', link: 'https://github.com/maggowda/Black_Friday_Sales_Prediction', src: AI_ML },
+  { name: 'Vehicle Detection', category: 'AI/ML', link: 'https://github.com/maggowda/Vehicle_Detection', src: AI_ML },
+  { name: 'Digital Clock', category: 'Electronics', link: 'https://drive.google.com/file/d/1m4VkKJeG2Ae59N4l3m-Frfpz3VmpxkT2/view?usp=sharing', src: Electronic },
+  { name: 'FM Radio', category: 'Electronics', link: 'https://drive.google.com/file/d/1piisVNy1xV4sq_V-FxFoct_Ftklpbva1/view?usp=sharing', src: Electronic },
+  { name: 'Cellphone Detector', category: 'Electronics', link: 'https://drive.google.com/file/d/1tulKTzmEerDvYwIJFApPFiF8KB7zPXf9/view?usp=sharing', src: Electronic },
 ];
 
 const classes = {
@@ -17,13 +21,13 @@ const classes = {
   container2: 'flex flex-row mb-[5px] sm:mb-[5px] md:mb-[30px] lg:mb-[30px]',
   container3: 'flex flex-row gap-4 sm:gap-4 md:gap-8 lg:gap-6 flex-wrap md:w-[390px] lg:w-[710px] sm:w-[220px] w-[220px]',
   container4: 'flex flex-col mb-[10px] sm:mb-[10px] md:mb-[30px] lg:mb-[30px]',
-  card: 'w-[210px] h-[130px] sm:w-[210px] sm:h-[130px] md:w-[365px] md:h-[230px] lg:w-[340px] lg:h-[230px] rounded-[15px] sm:rounded-[15px] md:rounded-[30px] lg:rounded-[30px] bg-zinc-700 flex-col flex justify-center items-center cursor-pointer',
+  card: 'w-[210px] h-[130px] sm:w-[210px] sm:h-[130px] md:w-[365px] md:h-[230px] lg:w-[340px] lg:h-[230px] rounded-[15px] sm:rounded-[15px] md:rounded-[30px] lg:rounded-[30px] bg-zinc-700 flex-col flex justify-center items-center cursor-pointer bg-cover',
   h1: 'text-[14px] sm:text-[14px] md:text-[28px] lg:text-[28px] mb-[20px]',
   option: 'w-[80px] sm:w-[80px] md:w-[180px]  lg:w-[180px] mb-[10px] bg-[#1b1b1b] border-[1px] text-[8px] sm:text-[8px] md:text-[17px] py-[3px] sm:py-[3px] md:py-[6px] lg:py-[6px] px-[15px] px-[15px] md:px-[20px] lg:px-[20px] lg:text-[17px] lg:h-[40px] md:h-[40px] sm:h-[20px] h-[20px] border-[#2e2e2e] hover:border-[#006cff] rounded-[10px] cursor-pointer',
   button: 'mt-[5px] sm:mt-[5px] md:mt-[20px] lg:mt-[20px] w-[80px] sm:w-[80px] md:w-[180px] lg:w-[180px] pl-[-3px] hover:bg-[#006cff] flex pt-[4px] pb-[5px] sm:pt-[4px] sm:pb-[5px] md:pt-[9px] md:pb-[10px] lg:pt-[9px] lg:pb-[10px] items-center justify-center text-[10px] sm:text-[10px] md:text-[16px] lg:text-[16px] text-semibold bg-[#1b1b1b] border-solid inline border-[1px] border-zinc-700 hover:border-[#006cff] rounded-[30px] cursor-pointer',
   pro: 'ml-[-5px] text-[8px] sm:text-[8px] md:text-[18px] lg:text-[18px] mb-[10px]  sm:mb-[10px] md:mb-[20px] lg:mb-[20px]',
   span: 'bg-[#2e2e2e] px-[5px] rounded-[5px] border-[#1b1b1b] border-solid border-[1px]',
-  header: 'w-[210px] h-[130px] sm:w-[210px] sm:h-[130px] md:w-[365px] md:h-[230px] lg:w-[340px] lg:h-[230px] rounded-[15px] sm:rounded-[15px] md:rounded-[30px] lg:rounded-[30px] flex-col flex justify-center items-center cursor-pointer opacity-0',
+  header: 'w-[210px] h-[130px] sm:w-[210px] sm:h-[130px] md:w-[365px] md:h-[230px] lg:w-[340px] lg:h-[230px] rounded-[15px] sm:rounded-[15px] md:rounded-[30px] lg:rounded-[30px] hover:bg-black/85 flex-col flex justify-center items-center cursor-pointer opacity-0 text-[15px] sm:text-[15px] md:text-[30px] lg:text-[30px]',
   hidden: 'hidden',
 }
 
@@ -83,7 +87,7 @@ const Projects = () => {
       <div className={classes.container2}>
         <div className={classes.container3}>
           {filteredItems.map((item, idx) => (
-            <motion.a href={item.link} target='_blank' variants={fromBottom} initial='hidden' animate='show' key={idx} className={classes.card}>
+            <motion.a style={{backgroundImage:`url(${item.src})`}} href={item.link} target='_blank' variants={fromBottom} initial='hidden' animate='show' key={idx} className={classes.card}>
               <motion.p className={classes.header} whileHover={{opacity:1}}>{item.name}</motion.p>
               <p className={classes.hidden}>{item.category}</p>
             </motion.a>

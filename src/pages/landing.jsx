@@ -6,6 +6,10 @@ import Carousel from '../components/carousel';
 import { Link } from 'react-router-dom';
 import Start from '../components/start';
 import { motion } from 'framer-motion';
+import Electronic from '../assets/images/electronics.svg';
+import Web from '../assets/images/web.svg';
+import AI_ML from '../assets/images/ai_ml.svg';
+import Web_Design from '../assets/images/webd.svg';
 
 const classes = {
   container: 'flex flex-col items-center bg-black text-white w-screen',
@@ -23,11 +27,11 @@ const classes = {
   button1: 'flex justify-center items-center text-[16px] h-[40px] w-[180px] sm:text-[16px] lg:text-[18px] md:text-[18px] md:h-[60px] md:w-[220px] mt-[15px] text-semibold bg-white lg:w-[240px] lg:h-[60px] sm:h-[40px] sm:w-[180px] text-black rounded-[30px] hover:bg-black hover:text-white cursor-pointer',
   img: 'w-[20px] h-[20px] ml-[10px] inline mb-[3px]',
   img1: 'w-[22px] h-[22px] ml-[15px] inline mb-[2px]',
-  div0: 'flex sm:w-[410px] w-[350px] sm:h-[580px] flex-col md:h-[560px] md:w-[700px] h-[580px] items-center justify-center lg:w-[1010px] lg:h-[630px] mt-[120px] mb-[50px] border-zinc-800 border-solid border-[2px] rounded-[50px] z-30',
-  div3: 'lg:w-[1010px] sm:w-[410px] md:w-[700px] sm:h-[580px] md:h-[560px] w-[350px] h-[580px] lg:h-[630px] rounded-[50px] bg-zinc-700 sticky lg:top-[110px] md:top-[85px] max-sm:top-[70px] z-20 border-solid border-[2px] border-white',
-  div3_1: 'lg:w-[1010px] sm:w-[410px] lg:h-[630px] md:w-[700px] md:h-[560px] w-[350px] h-[580px] sm:h-[580px] rounded-[50px] bg-zinc-700 sticky lg:top-[125px] md:top-[95px] max-sm:top-[80px] z-30 border-solid border-[2px] border-white',
-  div3_2: 'lg:w-[1010px] sm:w-[410px] lg:h-[630px] md:w-[700px] md:h-[560px] w-[350px] h-[580px] rounded-[50px] sm:h-[580px] bg-zinc-700 sticky lg:top-[140px] md:top-[105px] max-sm:top-[90px] z-40 border-solid border-[2px] border-white',
-  div3_3: 'lg:w-[1010px] sm:w-[410px] lg:h-[630px] md:w-[700px] md:h-[560px] w-[350px] h-[580px] rounded-[50px] sm:h-[580px] bg-zinc-700 sticky lg:top-[110px] md:top-[115px] max-sm:top-[100px] z-50 border-solid border-[2px] border-white', 
+  div0: 'flex sm:w-[410px] w-[370px] sm:h-[280px] flex-col md:h-[560px] md:w-[700px] h-[480px] items-center justify-center lg:w-[1010px] lg:h-[630px] mt-[120px] mb-[50px] border-zinc-800 border-solid border-[0px] rounded-[50px] z-30',
+  div3: 'lg:w-[1010px] sm:w-[410px] md:w-[700px] sm:h-[280px] md:h-[520px] w-[370px] h-[280px] lg:h-[630px] rounded-[50px] bg-zinc-700 sticky lg:top-[110px] md:top-[85px] sm:top-[75px] top-[75px] z-20 border-solid border-[0px] border-white bg-cover',
+  div3_1: 'lg:w-[1010px] sm:w-[410px] lg:h-[630px] md:w-[700px] md:h-[520px] w-[370px] h-[280px] sm:h-[280px] rounded-[50px] bg-zinc-700 sticky lg:top-[125px] md:top-[95px] sm:top-[80px] top-[80px] z-30 border-solid border-[0px] border-white bg-cover',
+  div3_2: 'lg:w-[1010px] sm:w-[410px] lg:h-[630px] md:w-[700px] md:h-[520px] w-[370px] h-[280px] rounded-[50px] sm:h-[280px] bg-zinc-700 sticky lg:top-[140px] md:top-[105px] sm:top-[90px] top-[90px] z-40 border-solid border-[0px] border-white bg-cover',
+  div3_3: 'lg:w-[1010px] sm:w-[410px] lg:h-[630px] md:w-[700px] md:h-[520px] w-[370px] h-[280px] rounded-[50px] sm:h-[280px] bg-zinc-700 sticky lg:top-[110px] md:top-[115px] sm:top-[100px] top-[100px] z-50 border-solid border-[0px] border-white bg-cover', 
 }
 
 const fromLeft = {
@@ -97,10 +101,10 @@ function Landing() {
       <motion.span variants={fromBottom} initial='hidden' animate='show'><Start/></motion.span>
       <motion.div variants={fromBottom} initial='hidden' whileInView={'show'} className={classes.h4}>High quality web design <br/>and development</motion.div>
       <div className={classes.container1}>
-          <div className={classes.div3}></div>
-          <div className={classes.div3_1}></div>
-          <div className={classes.div3_2}></div>
-          <div className={classes.div3_3}></div>
+          <a href='https://github.com/maggowda/HackHorizon-Exalyte' target='_blank' className={classes.div3} style={{backgroundImage:`url(${Web})`}}></a>
+          <a href='https://www.figma.com/design/Fcoqj3zCyleyG2Mdgzccpi/Techniqed-UI%2FUX?node-id=0-1&p=f&t=jzFEsq5umB5XjcG2-0' target='_blank' className={classes.div3_1} style={{backgroundImage:`url(${Web_Design})`}}></a>
+          <a href='https://github.com/maggowda/Black_Friday_Sales_Prediction' target='_blank' className={classes.div3_2} style={{backgroundImage:`url(${AI_ML})`}}></a>
+          <a href='https://drive.google.com/file/d/1piisVNy1xV4sq_V-FxFoct_Ftklpbva1/view?usp=sharing' target='_blank' className={classes.div3_3} style={{backgroundImage:`url(${Electronic})`}}></a>
       </div>
       <motion.div variants={fromBottom} initial='hidden' whileInView={'show'} whileTap={{scale : 0.9}} whileHover={{scale:1.05}}><Link to='/projects' className={classes.button}>View all projects<span><img src={arrow} className={classes.img}/></span></Link></motion.div>
       <motion.div variants={fromLeft} initial='hidden' whileInView={'show'} className={classes.div0} style={{backgroundImage:`url(${wallpaper})`}}>
