@@ -97,7 +97,7 @@ function Landing() {
         animate='show'
         className={classes.h1}><span className={classes.jap}><Typical steps={[toggle ? 'こんにちは' : 'Hello', 5000]} loop={1} wrapper="span"/></span>, I'm</motion.div>
       <motion.span variants={fromTop} initial='hidden' animate='show' className={classes.h2} id='font'>Megharsha</motion.span>
-      <motion.div variants={fromBottom} initial='hidden' animate='show' className={classes.h3}>Freelance UX UI Designer and Web Developer.<br/></motion.div>
+      <motion.div variants={fromBottom} initial='hidden' animate='show' className={classes.h3}>Freelance UX/UI Designer and Web Developer.<br/></motion.div>
       <motion.span variants={fromBottom} initial='hidden' animate='show'><Start/></motion.span>
       <motion.div variants={fromBottom} initial='hidden' whileInView={'show'} className={classes.h4}>High quality web design <br/>and development</motion.div>
       <div className={classes.container1}>
