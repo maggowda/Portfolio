@@ -231,7 +231,7 @@ const Engineer = () => {
           <h1 className={classes.head2}>"The more you learn,<br /> the more you earn." <br/>- <span className={classes.para3}>Warren Buffett</span></h1>
         </div>
       </motion.div>
-      <motion.a variants={fromBottom} initial='hidden' whileInView={'show'} whileTap={{scale: 0.9}} whileHover={{scale:1.05}} href='https://drive.google.com/file/d/1fDQ2RMn5iTCe-dr54YLLOq7iFY03-jZT/view?usp=sharing' target='_blank' className={classes.button}>Download Resume<span><img src={arrow} className={classes.img}/></span></motion.a>
+      <motion.a variants={fromBottom} initial='hidden' whileInView={'show'} whileTap={{scale: 0.9}} whileHover={{scale:1.05}} href='https://drive.google.com/file/d/1IKl-YnFSyTmFSAPHfRye77VxzHNSUwDJ/view?usp=sharing' target='_blank' className={classes.button}>Download Resume<span><img src={arrow} className={classes.img}/></span></motion.a>
     </div>
   )
 }
