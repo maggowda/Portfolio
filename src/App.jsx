@@ -7,6 +7,7 @@ import Projects from './pages/projects';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import LocomotiveScroll from 'locomotive-scroll';
+import ScrollTop from './components/scrollTop';
 
 const classes = {
   container: 'flex flex-col w-screen justify-between items-center bg-black text-white',
@@ -19,6 +20,7 @@ function App() {
   return (
       <div data-scroll-speed="-1" className={classes.container}>
         <Router>
+          <ScrollTop/>
           <Navbar />
             <Routes>
               <Route path="/" element={<Landing />} />
