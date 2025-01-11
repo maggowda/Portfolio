@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState,useEffect} from 'react';
 import arrow from '../assets/images/arrow-right.svg';
 import wallpaper from '../assets/images/wallpaper1.svg';
 import Carousel from '../components/carousel';
