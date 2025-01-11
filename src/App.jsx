@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
+import BackToTop from './components/backToTop';
 import Landing from './pages/landing';
 import Engineer from './pages/engineer';
 import Projects from './pages/projects';
@@ -28,6 +29,7 @@ function App() {
               <Route path="/projects" element={<Projects />} />
             </Routes>
             <Footer />
+            <BackToTop />
         </Router>
       </div>
   );
