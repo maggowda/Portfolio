@@ -105,7 +105,7 @@ function Landing() {
           <a href='https://drive.google.com/file/d/1piisVNy1xV4sq_V-FxFoct_Ftklpbva1/view?usp=sharing' target='_blank' className={classes.div3_3} style={{backgroundImage:`url(${Electronic})`}}></a>
       </div>
       <motion.div variants={fromBottom} initial='hidden' whileInView={'show'} whileTap={{scale : 0.9}} whileHover={{scale:1.05}}><Link to='/projects' className={classes.button}>View all projects<span><img src={arrow} className={classes.img}/></span></Link></motion.div>
-      <motion.div variants={fromLeft} initial='hidden' whileInView={'show'} className={classes.div0} style={{backgroundImage:`url(${wallpaper})`}}>
+      <motion.div variants={fromBottom} initial='hidden' whileInView={'show'} className={classes.div0} style={{backgroundImage:`url(${wallpaper})`}}>
         <div className={classes.h5}>Engineering</div>
         <motion.div whileTap={{scale : 0.9}} whileHover={{scale:1.05}}><Link to='/engineer' className={classes.button1}>Know More</Link></motion.div>
       </motion.div>
