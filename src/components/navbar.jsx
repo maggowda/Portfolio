@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 
 const classes = {
   container: 'font-mono fixed top-0 h-[40px]  sm:h-[40px] md:h-[60px] md:w-[95%] lg:w-[85%] left-0 right-0 flex mt-[20px] mx-auto sm:px-0 sm:w-[95%] px-4 rounded-[30px] bg-white/3 backdrop-blur-md lg:h-[60px] w-[97%] justify-between items-center z-[1000]',
-  container1: 'flex justify-around items-center text-[8px] sm:text-[9px] md:text-[16px] lg:text-[16px]',
+  container1: 'flex justify-around items-center text-[10px] sm:text-[10px] md:text-[16px] lg:text-[16px]',
   item: 'cursor-pointer text-white px-2 lg:px-4 sm:px-2 md:px-2 pb-[6px] pt-[5px] hover:bg-white/20 hover:backdrop-blur-sm hover:text-white rounded-[10px]',
   img: 'lg:h-[60px] md:h-[60px] md:w-[150px] lg:w-[150px] h-[60px] w-[80px] sm:h-[70px] sm:w-[90px] cursor-pointer mix-blend-multiply',
 };
