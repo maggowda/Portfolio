@@ -29,7 +29,7 @@ function App() {
               <Route path="/projects" element={<Projects />} />
             </Routes>
             <Footer />
-            <BackToTop />
+          <BackToTop />
         </Router>
       </div>
   );
