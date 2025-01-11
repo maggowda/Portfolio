@@ -28,10 +28,10 @@ const classes = {
   img: 'w-[20px] h-[20px] ml-[10px] inline mb-[3px]',
   img1: 'w-[22px] h-[22px] ml-[15px] inline mb-[2px]',
   div0: 'flex sm:w-[410px] w-[370px] sm:h-[280px] flex-col md:h-[560px] md:w-[700px] h-[280px] items-center justify-center lg:w-[1010px] lg:h-[630px] mt-[120px] mb-[50px] rounded-[50px] z-30 bg-cover',
-  div3: 'lg:w-[1010px] sm:w-[410px] md:w-[700px] sm:h-[280px] md:h-[520px] w-[370px] h-[280px] lg:h-[630px] rounded-[50px] sticky lg:top-[110px] md:top-[85px] sm:top-[75px] top-[75px] z-20 bg-cover',
-  div3_1: 'lg:w-[1010px] sm:w-[410px] lg:h-[630px] md:w-[700px] md:h-[520px] w-[370px] h-[280px] sm:h-[280px] rounded-[50px] sticky lg:top-[125px] md:top-[95px] sm:top-[80px] top-[80px] z-30 bg-cover',
-  div3_2: 'lg:w-[1010px] sm:w-[410px] lg:h-[630px] md:w-[700px] md:h-[520px] w-[370px] h-[280px] rounded-[50px] sm:h-[280px] sticky lg:top-[140px] md:top-[105px] sm:top-[90px] top-[90px] z-40 bg-cover',
-  div3_3: 'lg:w-[1010px] sm:w-[410px] lg:h-[630px] md:w-[700px] md:h-[520px] w-[370px] h-[280px] rounded-[50px] sm:h-[280px] sticky lg:top-[110px] md:top-[115px] sm:top-[100px] top-[100px] z-50 bg-cover', 
+  div3: 'lg:w-[1010px] sm:w-[410px] md:w-[700px] sm:h-[280px] md:h-[520px] w-[370px] h-[280px] lg:h-[625px] rounded-[50px] sticky lg:top-[110px] md:top-[85px] sm:top-[75px] top-[75px] z-20 bg-cover',
+  div3_1: 'lg:w-[1010px] sm:w-[410px] lg:h-[625px] md:w-[700px] md:h-[520px] w-[370px] h-[280px] sm:h-[280px] rounded-[50px] sticky lg:top-[125px] md:top-[95px] sm:top-[80px] top-[80px] z-30 bg-cover',
+  div3_2: 'lg:w-[1010px] sm:w-[410px] lg:h-[625px] md:w-[700px] md:h-[520px] w-[370px] h-[280px] rounded-[50px] sm:h-[280px] sticky lg:top-[140px] md:top-[105px] sm:top-[90px] top-[90px] z-40 bg-cover',
+  div3_3: 'lg:w-[1010px] sm:w-[410px] lg:h-[625px] md:w-[700px] md:h-[520px] w-[370px] h-[280px] rounded-[50px] sm:h-[280px] sticky lg:top-[110px] md:top-[115px] sm:top-[100px] top-[100px] z-50 bg-cover', 
 }
 
 const fromLeft = {

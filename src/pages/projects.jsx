@@ -21,7 +21,7 @@ const classes = {
   container2: 'flex flex-row mb-[5px] sm:mb-[5px] md:mb-[30px] lg:mb-[30px]',
   container3: 'flex flex-row gap-4 sm:gap-4 md:gap-8 lg:gap-6 flex-wrap md:w-[390px] lg:w-[710px] sm:w-[200px] w-[200px]',
   container4: 'flex flex-col mb-[10px] sm:mb-[10px] md:mb-[30px] lg:mb-[30px]',
-  card: 'w-[200px] h-[130px] sm:w-[200px] sm:h-[130px] md:w-[365px] md:h-[230px] lg:w-[340px] lg:h-[230px] rounded-[15px] sm:rounded-[15px] md:rounded-[30px] lg:rounded-[30px] flex-col flex justify-center items-center cursor-pointer bg-cover',
+  card: 'w-[200px] h-[125px] sm:w-[200px] sm:h-[125px] md:w-[365px] md:h-[225px] lg:w-[340px] lg:h-[225px] rounded-[15px] sm:rounded-[15px] md:rounded-[30px] lg:rounded-[30px] flex-col flex justify-center items-center cursor-pointer bg-cover',
   h1: 'text-[14px] sm:text-[14px] md:text-[28px] lg:text-[28px] mb-[20px]',
   option: 'w-[95px] sm:w-[95px] md:w-[180px]  lg:w-[180px] mb-[10px] bg-[#1b1b1b] border-[1px] text-[10px] sm:text-[10px] md:text-[17px] py-[2px] sm:py-[2px] md:py-[6px] lg:py-[6px] px-[15px] px-[15px] md:px-[20px] lg:px-[20px] lg:text-[17px] lg:h-[40px] md:h-[40px] sm:h-[20px] h-[20px] border-[#2e2e2e] hover:border-[#006cff] rounded-[5px] sm:rounded-[5px] md:rounded-[10px] lg:rounded-[10px] cursor-pointer',
   button: 'mt-[5px] sm:mt-[5px] md:mt-[20px] lg:mt-[20px] w-[80px] sm:w-[80px] md:w-[180px] lg:w-[180px] pl-[-3px] hover:bg-[#006cff] flex pt-[4px] pb-[5px] sm:pt-[4px] sm:pb-[5px] md:pt-[9px] md:pb-[10px] lg:pt-[9px] lg:pb-[10px] items-center justify-center text-[10px] sm:text-[10px] md:text-[16px] lg:text-[16px] text-semibold bg-[#1b1b1b] border-solid inline border-[1px] border-zinc-700 hover:border-[#006cff] rounded-[30px] cursor-pointer',
