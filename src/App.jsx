@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Analytics } from "@vercel/analytics/react"
 import Landing from './pages/landing';
 import Engineer from './pages/engineer';
 import Projects from './pages/projects';

@@ -1,4 +1,5 @@
 import React,{useState,useEffect} from 'react';
+import { Typewriter } from 'react-simple-typewriter';
 import arrow from '../assets/images/arrow-right.svg';
 import wallpaper from '../assets/images/wallpaper1.svg';
 import Carousel from '../components/carousel';
@@ -78,23 +79,21 @@ const fromTop = {
   }
 
 function Landing() {
-
-  const [toggle, setToggle] = useState(true);
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setToggle((prevToggle) => !prevToggle);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <div className={classes.container}>
       <motion.div
         variants={fromTop}
         initial='hidden'
         animate='show'
-        className={classes.h1}><span className={classes.jap}>こんにちは</span>, I'm</motion.div>
+        className={classes.h1}><span className={classes.jap}><Typewriter
+        words={['こんにちは' , 'Hello']}
+        loop={0}
+        cursor
+        cursorStyle='!'
+        typeSpeed={60}
+        deleteSpeed={40}
+        delaySpeed={2000}
+      /></span>, I'm</motion.div>
       <motion.span variants={fromTop} initial='hidden' animate='show' className={classes.h2} id='font'>Megharsha</motion.span>
       <motion.div variants={fromBottom} initial='hidden' animate='show' className={classes.h3}>Freelance UX/UI Designer and Web Developer.<br/></motion.div>
       <motion.span variants={fromBottom} initial='hidden' animate='show'><Start/></motion.span>
