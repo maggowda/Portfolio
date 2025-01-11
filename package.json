@@ -9,6 +9,9 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  "peerDependencies": {
+    "react": "^15.0.0 || ^16.0.0 || ^18.0.0"
+  },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.13.5",
@@ -19,14 +22,14 @@
     "framer-motion": "^11.14.4",
     "locomotive-scroll": "^5.0.0-beta.21",
     "motion": "^11.14.4",
-    "react": "^18.3.1",
+    "react": "^15.0.0 || ^16.0.0 || ^18.0.0",
     "react-dom": "^18.3.1",
     "react-hot-toast": "^2.4.1",
     "react-loader-spinner": "^6.1.6",
     "react-router-dom": "^6.28.0",
     "react-slick": "^0.30.2",
     "react-spinners": "^0.15.0",
-    "react-typical": "^0.1.3",
+    "react-typewriter-effect": "^1.1.0",
     "slick-carousel": "^1.8.1",
     "vite-plugin-env-compatible": "^2.0.1"
   },

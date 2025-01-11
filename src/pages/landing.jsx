@@ -1,5 +1,4 @@
 import React,{useState,useEffect} from 'react'
-import Typical from 'react-typical';
 import arrow from '../assets/images/arrow-right.svg';
 import wallpaper from '../assets/images/wallpaper1.svg';
 import Carousel from '../components/carousel';
@@ -95,7 +94,7 @@ function Landing() {
         variants={fromTop}
         initial='hidden'
         animate='show'
-        className={classes.h1}><span className={classes.jap}><Typical steps={[toggle ? 'こんにちは' : 'Hello', 5000]} loop={1} wrapper="span"/></span>, I'm</motion.div>
+        className={classes.h1}><span className={classes.jap}>こんにちは</span>, I'm</motion.div>
       <motion.span variants={fromTop} initial='hidden' animate='show' className={classes.h2} id='font'>Megharsha</motion.span>
       <motion.div variants={fromBottom} initial='hidden' animate='show' className={classes.h3}>Freelance UX/UI Designer and Web Developer.<br/></motion.div>
       <motion.span variants={fromBottom} initial='hidden' animate='show'><Start/></motion.span>
