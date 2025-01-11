@@ -3,7 +3,7 @@ import Top from '../assets/images/top.svg';
 import { motion } from 'framer-motion';
 
 const classes = {
-    button: 'fixed lg:bottom-[60px] lg:right-[50px] md:bottom-[60px] md:right-[10px] sm:bottom-[50px] sm:right-[5px] bottom-[50px] right-[5px]',
+    button: 'fixed lg:bottom-[60px] lg:right-[50px] md:bottom-[60px] md:right-[10px] sm:bottom-[50px] sm:right-[5px] bottom-[50px] right-[5px] z-1000',
     img: 'lg:w-[90px] lg:h-[90px] md:w-[70px] md:h-[70px] sm:w-[20px] sm:h-[20px] w-[50px] h-[50px] bg-black rounded-full',
 }
 
