@@ -28,7 +28,7 @@ Check out the live version of my portfolio: [Portfolio Live Demo](https://maggow
 To run this project locally, follow these steps:
 
    ```bash
-   git clone https://github.com/your-username/your-portfolio-repo.git
+   git clone https://github.com/maggowda/Portfolio.git
    ```
    ```bash
    cd Portfolio
