@@ -27,12 +27,11 @@ Check out the live version of my portfolio: [Portfolio Live Demo](https://maggow
 
 To run this project locally, follow these steps:
 
-1. **Clone the repository**:
    ```bash
    git clone https://github.com/your-username/your-portfolio-repo.git
    ```
    ```bash
-   cd your-portfolio-repo
+   cd Portfolio
    ```
    ```bash
    npm install
@@ -40,5 +39,8 @@ To run this project locally, follow these steps:
    ```bash
    npm run dev
    ```
-   
+
+## Preview
+
+![Image](https://github.com/user-attachments/assets/7dec2f5f-9784-4cef-8d3e-6ef4f07717d8)
 
