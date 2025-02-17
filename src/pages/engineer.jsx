@@ -154,7 +154,7 @@ const Engineer = () => {
 
   useEffect(() => {
     let start = 0;
-    const end = 7; 
+    const end = 9; 
     if (start === end) return;
 
     let totalDuration = 500; 

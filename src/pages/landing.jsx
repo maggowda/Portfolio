@@ -6,10 +6,10 @@ import Carousel from '../components/carousel';
 import { Link } from 'react-router-dom';
 import Start from '../components/start';
 import { motion } from 'framer-motion';
-import Electronic from '../assets/images/electronics.svg';
-import Web from '../assets/images/web.svg';
-import AI_ML from '../assets/images/ai_ml.svg';
-import Web_Design from '../assets/images/webd.svg';
+import Ass from '../assets/images/ass.svg';
+import Ex from '../assets/images/ex.svg';
+import Tech from '../assets/images/tech.svg';
+import Ad from '../assets/images/ad.svg';
 
 const classes = {
   container: 'flex flex-col items-center bg-black text-white w-screen',
@@ -28,10 +28,10 @@ const classes = {
   img: 'w-[20px] h-[20px] ml-[10px] inline mb-[3px]',
   img1: 'w-[22px] h-[22px] ml-[15px] inline mb-[2px]',
   div0: 'flex sm:w-[410px] w-[370px] sm:h-[280px] flex-col md:h-[560px] md:w-[700px] h-[280px] items-center justify-center lg:w-[1010px] lg:h-[630px] mt-[120px] mb-[50px] rounded-[50px] bg-cover',
-  div3: 'lg:w-[1010px] sm:w-[410px] md:w-[700px] sm:h-[280px] md:h-[520px] w-[370px] h-[280px] lg:h-[625px] rounded-[50px] sticky lg:top-[110px] md:top-[85px] sm:top-[75px] top-[75px] z-20 bg-cover',
-  div3_1: 'lg:w-[1010px] sm:w-[410px] lg:h-[625px] md:w-[700px] md:h-[520px] w-[370px] h-[280px] sm:h-[280px] rounded-[50px] sticky lg:top-[125px] md:top-[95px] sm:top-[80px] top-[80px] z-30 bg-cover',
-  div3_2: 'lg:w-[1010px] sm:w-[410px] lg:h-[625px] md:w-[700px] md:h-[520px] w-[370px] h-[280px] rounded-[50px] sm:h-[280px] sticky lg:top-[140px] md:top-[105px] sm:top-[90px] top-[90px] z-40 bg-cover',
-  div3_3: 'lg:w-[1010px] sm:w-[410px] lg:h-[625px] md:w-[700px] md:h-[520px] w-[370px] h-[280px] rounded-[50px] sm:h-[280px] sticky lg:top-[110px] md:top-[115px] sm:top-[100px] top-[100px] z-50 bg-cover', 
+  div3: 'lg:w-[1010px] sm:w-[410px] md:w-[700px] sm:h-[220px] md:h-[400px] w-[370px] h-[220px] lg:h-[570px] md:rounded-[50px] sticky lg:top-[110px] md:top-[85px] sm:top-[75px] top-[75px] z-20 bg-cover rounded-[20px] border-[1px] border-black',
+  div3_1: 'lg:w-[1010px] sm:w-[410px] lg:h-[570px] md:w-[700px] md:h-[400px] w-[370px] h-[220px] sm:h-[220px] md:rounded-[50px] sticky lg:top-[125px] md:top-[95px] sm:top-[80px] top-[80px] z-30 bg-cover rounded-[20px] border-[1px] border-black',
+  div3_2: 'lg:w-[1010px] sm:w-[410px] lg:h-[570px] md:w-[700px] md:h-[400px] w-[370px] h-[220px] md:rounded-[50px] sm:h-[220px] sticky lg:top-[140px] md:top-[105px] sm:top-[90px] top-[90px] z-40 bg-cover rounded-[20px] border-[1px] border-black',
+  div3_3: 'lg:w-[1010px] sm:w-[410px] lg:h-[570px] md:w-[700px] md:h-[400px] w-[370px] h-[220px] md:rounded-[50px] sm:h-[220px] sticky lg:top-[110px] md:top-[115px] sm:top-[100px] top-[100px] z-50 bg-cover rounded-[20px] border-[1px] border-black', 
 }
 
 const fromLeft = {
@@ -99,10 +99,10 @@ function Landing() {
       <motion.span variants={fromBottom} initial='hidden' animate='show'><Start/></motion.span>
       <motion.div variants={fromBottom} initial='hidden' whileInView={'show'} className={classes.h4}>High quality web design <br/>and development</motion.div>
       <div className={classes.container1}>
-          <a href='https://github.com/maggowda/HackHorizon-Exalyte' target='_blank' className={classes.div3} style={{backgroundImage:`url(${Web})`}}></a>
-          <a href='https://www.figma.com/design/Fcoqj3zCyleyG2Mdgzccpi/Techniqed-UI%2FUX?node-id=0-1&p=f&t=jzFEsq5umB5XjcG2-0' target='_blank' className={classes.div3_1} style={{backgroundImage:`url(${Web_Design})`}}></a>
-          <a href='https://github.com/maggowda/Black_Friday_Sales_Prediction' target='_blank' className={classes.div3_2} style={{backgroundImage:`url(${AI_ML})`}}></a>
-          <a href='https://drive.google.com/file/d/1piisVNy1xV4sq_V-FxFoct_Ftklpbva1/view?usp=sharing' target='_blank' className={classes.div3_3} style={{backgroundImage:`url(${Electronic})`}}></a>
+          <a href='https://github.com/maggowda/aadithya-security-service' target='_blank' className={classes.div3} style={{backgroundImage:`url(${Ass})`}}></a>
+          <a href='https://www.anantadecor.com/' target='_blank' className={classes.div3_1} style={{backgroundImage:`url(${Ad})`}}></a>
+          <a href='https://www.figma.com/design/Fcoqj3zCyleyG2Mdgzccpi/Techniqed-UI%2FUX?node-id=0-1&p=f&t=jzFEsq5umB5XjcG2-0' target='_blank' className={classes.div3_2} style={{backgroundImage:`url(${Tech})`}}></a>
+          <a href='https://github.com/maggowda/HackHorizon-Exalyte' target='_blank' className={classes.div3_3} style={{backgroundImage:`url(${Ex})`}}></a>
       </div>
       <motion.div variants={fromBottom} initial='hidden' whileInView={'show'} whileTap={{scale : 0.9}} whileHover={{scale:1.05}}><Link to='/projects' className={classes.button}>View all projects<span><img src={arrow} className={classes.img}/></span></Link></motion.div>
       <motion.div variants={fromBottom} initial='hidden' whileInView={'show'} className={classes.div0} style={{backgroundImage:`url(${wallpaper})`}}>
