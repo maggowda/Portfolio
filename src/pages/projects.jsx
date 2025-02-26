@@ -9,7 +9,7 @@ import Vc from '../assets/images/vc.svg';
 import Bf from '../assets/images/bf.svg';
 
 const items = [
-  { name: 'Aadithya Security', category: 'Web' , link: 'https://github.com/maggowda/aadithya-security-service', src: Ass },
+  { name: 'Aadithya Security', category: 'Web' , link: 'https://www.aadithyasecurityservice.vercel.app', src: Ass },
   { name: 'Ananta Decor', category: 'Web' , link: 'https://www.anantadecor.com/', src: Ad },
   { name: 'Exalyte', category: 'Web' , link: 'https://github.com/maggowda/HackHorizon-Exalyte', src: Ex },
   { name: 'Techniqed', category: 'Web Design', link: 'https://www.figma.com/design/Fcoqj3zCyleyG2Mdgzccpi/Techniqed-UI%2FUX?node-id=0-1&p=f&t=jzFEsq5umB5XjcG2-0', src: Tech },
