@@ -99,7 +99,7 @@ function Landing() {
       <motion.span variants={fromBottom} initial='hidden' animate='show'><Start/></motion.span>
       <motion.div variants={fromBottom} initial='hidden' whileInView={'show'} className={classes.h4}>High quality web design <br/>and development</motion.div>
       <div className={classes.container1}>
-          <a href='https://github.com/maggowda/aadithya-security-service' target='_blank' className={classes.div3} style={{backgroundImage:`url(${Ass})`}}></a>
+          <a href='https://aadithyasecurityservice.vercel.app/' target='_blank' className={classes.div3} style={{backgroundImage:`url(${Ass})`}}></a>
           <a href='https://www.anantadecor.com/' target='_blank' className={classes.div3_1} style={{backgroundImage:`url(${Ad})`}}></a>
           <a href='https://www.figma.com/design/Fcoqj3zCyleyG2Mdgzccpi/Techniqed-UI%2FUX?node-id=0-1&p=f&t=jzFEsq5umB5XjcG2-0' target='_blank' className={classes.div3_2} style={{backgroundImage:`url(${Tech})`}}></a>
           <a href='https://github.com/maggowda/HackHorizon-Exalyte' target='_blank' className={classes.div3_3} style={{backgroundImage:`url(${Ex})`}}></a>
